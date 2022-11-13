@@ -95,7 +95,7 @@ h5 {
 }
 h6 {
   display: flex;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--beige1);
   margin-top: 1em;
   justify-content: left;
