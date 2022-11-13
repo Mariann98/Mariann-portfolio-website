@@ -131,6 +131,7 @@ img {
   height: auto;
   width: 50%;
   border-radius: 1em;
+  margin-top: 1em;
 }
 .work_wrapper_main {
   display: flex;
