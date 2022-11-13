@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fuzzy+Bubbles&family=Waiting+for+the+Sunrise&display=swap');
 
 :root {
   --beige1: #b79e8e;
@@ -12,39 +12,62 @@
 }
 
 body {
-
   font-family: 'Dosis', sans-serif;
   color: var(--dark1);
   background-color: var(--light1);
   margin-left: 2em;
    margin-right: 2em;
 }
-
-.navbar_right a {
+.navbar {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: sticky;
+  align-items: baseline;
+  justify-content: space-between;
+  top: 0px;
+  z-index: 5;
+  background-color: var(--light1);
+  width:100%;
+
 }
 .navbar_left {
-  display: none;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
 }
-.logo1 {
-   height: auto;
-  width: 20%;
-  margin-top:1em;
+.navbar_right {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
 }
 .logo {
+  margin-top: 1em;
   height: auto;
-  width: 50%;
-  margin: 5em 0 2em 0;
+  width: 20%;
 }
-.navbar_mid a {
+li a {
+  color: var(--beige1);
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.2em;
+  white-space: nowrap;
+  margin-right: 1em;
+}
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+.navbar_left a:hover {
+  color: #8c674f;
+  transition: 0.5s;
 }
 
 h1 {
+  font-family: 'Waiting for the Sunrise', cursive;
+
   font-weight: 500;
   font-style: normal;
   text-align: center;
@@ -212,11 +235,7 @@ img {
     justify-content: center;
     text-align: center;
   }
-  .logo1 {
-    height: auto;
-    width: 100%;
-    margin-top: 1em;
-  }
+
   .prso {
     font-size: 1.3em;
     color: var(--beige1);
@@ -331,50 +350,11 @@ img {
     margin-left: 10em;
     margin-right: 10em;
   }
-  .navbar {
-    display: flex;
-    position: sticky;
-    justify-content: space-between;
-    align-items: baseline;
-    top: 0px;
-    z-index: 5;
-    background-color: var(--light1);
-  }
-
-  .navbar_right a {
-    display: flex;
-    align-items: flex-end;
-    justify-content: right;
-  }
-  .navbar_left {
-    display: block;
-  }
-  .navbar_mid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   li a {
-    color: var(--beige1);
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.1em;
-    margin: 1em;
-  }
-  ul {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
+    font-size: 1.5em;
+    margin-right: 1.5em;
+}
 
-  .logo1 {
-    margin-top: 1em;
-    height: auto;
-    width: 20%;
-  }
   h1 {
     font-weight: 500;
     font-style: normal;
@@ -527,7 +507,10 @@ img {
     margin-bottom: 1em;
     margin-top: 1em;
   }
-
+  li a {
+    font-size: 1.8em;
+    margin-right: 2em;
+}
   h4 {
     display: flex;
     font-size: 1.6em;
@@ -648,31 +631,23 @@ img {
     margin-left: 15em;
     margin-right: 15em;
   }
-
-  .navbar {
+  .backButton {
+    width: 4%;
+    text-decoration: none;
+    position: relative;
     display: flex;
-    position: sticky;
-    justify-content: space-between;
-    align-items: baseline;
-    top: 0px;
-    z-index: 5;
+    font-size: 2em;
+    align-content: center;
+    align-items: center;
+    color: var(--dark1);
+    transition: 0.5s ease-in;
+    white-space: nowrap;
   }
+
 
   li a {
-    color: var(--beige1);
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.2em;
-    margin: 1em;
-  }
-  ul {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
+    font-size: 1.8em;
+}
   h1 {
     font-weight: 500;
     font-style: normal;
@@ -770,6 +745,7 @@ img {
   }
 }
 @media (min-width: 1536px) {
+  
   body {
     margin-left: 25em;
     margin-right: 25em;
@@ -792,25 +768,9 @@ img {
   }
 
   li a {
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.5em;
-    margin: 1em;
-  }
-  ul {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
-
-  .logo1 {
-    margin-top: 1em;
-    height: auto;
-    width: 30%;
-  }
+    font-size: 2em;
+    margin-right: 3em;
+}
 
   h1 {
     font-weight: 500;
