@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fuzzy+Bubbles&family=Waiting+for+the+Sunrise&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Fuzzy+Bubbles&family=Waiting+for+the+Sunrise&display=swap");
 
 :root {
   --beige1: #b79e8e;
@@ -13,264 +13,278 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   color: var(--dark1);
   background-color: var(--light1);
   margin-left: 1em;
   margin-right: 1em;
 }
 .wave {
-    animation-name: wave-animation;
-    animation-duration: 2.5s;        
-    animation-iteration-count: infinite;  
-    transform-origin: 70% 70%;       
-    display: inline-block;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
   }
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }
-    100% { transform: rotate( 0.0deg) }
+  10% {
+    transform: rotate(14deg);
   }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .navbar {
-    display: flex;
-    position: sticky;
-    align-items: baseline;
-    justify-content: space-between;
-    top: 0px;
-    z-index: 5;
-    background-color: var(--light1);
-    width:100%;
-
-  }
+  display: flex;
+  position: sticky;
+  align-items: baseline;
+  justify-content: space-between;
+  top: 0px;
+  z-index: 5;
+  background-color: var(--light1);
+  width: 100%;
+}
 .navbar_left {
-    display: flex;
-    align-items: left;
-    justify-content: flex-start;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
 }
 .navbar_right {
-    display: flex;
-    align-items: right;
-    justify-content: flex-end;
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
 }
 .logo {
-    margin-top: 1em;
-    height: auto;
-    width: 20%;
+  margin-top: 1em;
+  height: auto;
+  width: 20%;
 }
 li a {
-    color: var(--beige1);
-    text-align: center;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.2em;
+  color: var(--beige1);
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.2em;
 }
 ul {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
 }
 .navbar_left a:hover {
-    color: #8c674f;
-    transition: 0.5s;
+  color: #8c674f;
+  transition: 0.5s;
 }
 h1 {
-    font-family: 'Waiting for the Sunrise', cursive;
-    color: var(--beige1);
-    font-weight: 500;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 1em;
-  }
+  font-family: "Waiting for the Sunrise", cursive;
+  color: var(--beige1);
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
 
 h2 {
-    font-family: 'Waiting for the Sunrise', cursive;
-    color: var(--beige1);
-    font-weight: 500;
-    font-style: normal;
-    text-align: left;
-    font-size: 1.2em;  
+  font-family: "Waiting for the Sunrise", cursive;
+  color: var(--beige1);
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  font-size: 1.2em;
 }
 .about_me_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .about_me_wrapper_reverse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 p {
-    font-size: 1em;
+  font-size: 1em;
 }
 .wrapper_right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 .profile_picture {
-    height: auto;
-    width: 40%;
-    margin: 1em;
-    border-radius: 1em;
+  height: auto;
+  width: 40%;
+  margin: 1em;
+  border-radius: 1em;
 }
 footer {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
 }
 .iconArea {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    transition: 1s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transition: 1s ease-in-out;
 }
 .icon img {
-    position: relative;
-    margin: 1em;
-    transition: 0.3s ease-in;
-    width: 2em;
-    height: auto;
+  position: relative;
+  margin: 1em;
+  transition: 0.3s ease-in;
+  width: 2em;
+  height: auto;
 }
 .copyright {
-    font-size: 1em;
-}
-  
-@media (min-width: 360px) {
-body {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-.navbar {
-    margin-right: 2em;
+  font-size: 1em;
 }
 
-.profile_picture {
+@media (min-width: 360px) {
+  body {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .navbar {
+    margin-right: 2em;
+  }
+
+  .profile_picture {
     height: auto;
-    width: 40%;
-}
+    width: 30%;
+  }
 }
 @media (min-width: 600px) {
-    body {
-      margin-left: 5em;
-      margin-right: 5em;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      margin-top: 1em;
-    }
-    footer {
-      width: 100% auto;
-    }
+  body {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+  }
+  footer {
+    width: 100% auto;
+  }
 }
 
 @media (min-width: 768px) {
-    body {
-        margin-left: 7em;
-        margin-right: 7em;
-    }
-    li a {
-        font-size: 1.5em;
-    }
-    h1 {
-        font-size: 2.2em;
-    }
-      
-    h2 {
-        font-size: 1.5em;  
-    }
-    p {
-        font-size: 1.2em;
-    }
-    .icon img {
-        width: 3em;
+  body {
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+  li a {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
 
-    } 
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .icon img {
+    width: 3em;
+  }
 }
 
 @media (min-width: 1024px) {
-    body {
-        margin-left: 12em;
-        margin-right: 12em;
-    }
-    li a {
-        font-size: 1.8em;
-    }
-    h1 {
-        font-size: 2.5em;
-    }
-      
-    h2 {
-        font-size: 1.8em;  
-    }
-    p {
-        font-size: 1.5em;
-    }
-    .icon img {
-        width: 3em;
-    }
+  body {
+    margin-left: 12em;
+    margin-right: 12em;
   }
-@media (min-width: 1536px) {
-    body {
-        margin-left: 20em;
-        margin-right: 20em;
-    }
-    li a {
-        font-size: 2em;
-    }
-    h1 {
-        font-size: 3em;
-    }
-      
-    h2 {
-        font-size: 2.2em;  
-    }
-    p {
-        font-size: 1.8em;
-    }
-    .about_me_wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    .about_me_wrapper_reverse {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
-    }
-    .profile_picture {
-        height: auto;
-        width: 40%;
-        margin: 1em;
-        border-radius: 1em;
-    }
+  li a {
+    font-size: 1.8em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
 
-    .icon img {
-        width: 3em;
-    }
+  h2 {
+    font-size: 1.8em;
   }
+  p {
+    font-size: 1.5em;
+  }
+  .icon img {
+    width: 3em;
+  }
+}
+@media (min-width: 1536px) {
+  body {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+  li a {
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+  p {
+    font-size: 1.8em;
+  }
+  .about_me_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .about_me_wrapper_reverse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .profile_picture {
+    height: auto;
+    width: 30%;
+    margin: 1em;
+    border-radius: 1em;
+  }
+
+  .icon img {
+    width: 3em;
+  }
+}
