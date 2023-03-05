@@ -214,7 +214,7 @@ img {
   font-weight: 900;
 }
   iframe video{
-    height:70%;
+    height:20%;
     width:auto;
   }
 
@@ -265,6 +265,10 @@ img {
     margin-top: 2em;
   }
 
+  iframe video{
+    height:70%;
+    width:auto;
+  }
   .work_wrapper {
     display: flex;
     flex-direction: column;
