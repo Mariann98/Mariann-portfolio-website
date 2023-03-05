@@ -38,6 +38,8 @@ body {
   align-items: left;
   justify-content: flex-start;
   margin-left: 2em;
+  white-space: nowrap;
+
 }
 .navbar_right {
   display: flex;
