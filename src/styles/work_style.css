@@ -29,7 +29,8 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   width: 100%;
 }
 .navbar_left {
