@@ -69,7 +69,7 @@ ul {
   list-style: none;
 }
 .navbar_left a:hover {
-  color: #8c674f;
+  color: var(--beige1);
   transition: 0.5s;
 }
 
@@ -200,7 +200,7 @@ img {
   font-weight: 600;
 }
 .project_selection_link a:hover {
-  color: #8c674f;
+  color: var(--beige1);
   transition: 0.5s;
 }
 .xd_link {
