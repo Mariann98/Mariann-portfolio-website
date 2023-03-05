@@ -8,6 +8,20 @@
     <link href="src/styles/aboutme_style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="fw-light text-white m-0"></h1>
+        <div class="btn-group my-5">
+          <a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip" class="btn btn-outline-light" aria-current="page"><i class="fas fa-file-download me-2"></i></a>
+          <a href="https://codepen.io/P1N2O/full/pyBNzX" class="btn btn-outline-light"> <i class="fas fa-expand ms-2"></i></a>
+        </div>
+        <a href="https://manuel.pinto.dev" class="text-decoration-none">
+          <h5 class="fw-light text-white m-0"></h5>
+        </a>
+      </div>
+    </div>
+    </div>
     <div class="navbar">
       <div class="navbar_left">
         <ul class="navbar-list">
@@ -15,13 +29,12 @@
         </ul>
       </div>
       <div class="navbar_right">
-        <img class="logo" src="public/pictures/MA.png" alt="logo" />
+        <img class="logo" src="public/pictures/logo1.png" alt="logo" />
       </div>
     </div>
     <div class="aboutme" id="aboutme">
-      <h1>About me</h1>
       <div class="about_me_wrapper_reverse">
-        <div class="wrapper_left">
+        <div class="wrapper_left" id="about_me_text">
           <h2>Hi, I’m Mariann Alber</h2>
           <p>
             UX/UI Designer<span class="wave">👋</span>
@@ -30,61 +43,79 @@
           </p>
         </div>
         <div class="wrapper_right">
-          <img src="public/pictures/mealone.jpg" class="profile_picture" alt="me" />
+          <img src="public/pictures/me1.png" class="profile_picture" alt="me" />
         </div>
       </div>
       <div class="about_me_wrapper">
-        <div class="wrapper_left">
-          <h2>Get to know me</h2>
+        <div class="wrapper_left" id="about_me_text_more">
           <p>
-            I grew up in the capital city of Estonia and lived there for almost 20 years. In the
-            midst of moving to Germany to study tourism management, I was forced to cancel my plans
-            due to covid. My passion for UX/UI design came about when I was on the hunt for my new
-            career path. Through my journey, I have come to the Netherlands where I am currently
-            majoring in user experience design and developing my future here.
+            I spent most of my life in the beautiful capital city of Estonia, where I lived for nearly 20 years. When I decided to move to Germany to study tourism management, my plans were unexpectedly derailed by the COVID-19 pandemic. However, this challenge led me to discover my passion for UX/UI design, which I realized was the perfect career path for me. Now, I find myself in the Netherlands, where I am majoring in user experience design and working to build my future in this exciting field.
+            <br><br>In my free time, I enjoy exploring new hobbies like knitting socks, embroidery, baking, and playing on my Switch. I also like to unwind by cozying up with a good movie. I'm always looking for new challenges, whether it's running 16km in the mud or trying my hand at waterskiing.
+            <br><br>What I love most about UX design is prototyping, as I find it an immersive experience that I can get lost in for hours. My studies in Communication & Multimedia Design have deepened my interest in UX/UI and web design. During my internship at Orbital Eye, I had the opportunity to improve my skills and learn more about satellite monitoring. This experience furthered my already existing interest in space and taught me so much more about the field.
           </p>
         </div>
-        <div class="wrapper_right">
-          <img src="public/pictures/snow.jpg" class="profile_picture" alt="me" />
-          <img src="public/pictures/snowtrees.jpg" class="profile_picture" alt="me" />
-        </div>
-      </div>
-      <div class="about_me_wrapper">
-        <div class="wrapper_left">
-          <p>
-            In my free time, I love to try out new things, but I also enjoy getting cozy and
-            watching movies. Since I like to multitask, I always do something in the meantime -
-            knitting socks for Christmas, embroidering, baking, and playing on Switch. To expand my
-            skills and challenge myself, I am always up for trying new things, like running 16km in
-            the mud or going waterskiing.
-          </p>
-          <br />
-          <p>
-            The best part about UX design for me is prototyping, I can get lost in time when I begin
-            with it. I could do that for the rest of my life. By studying Communication & Multimedia
-            Design my interest in UX/UI Design, and Web Design grew tremendously. During my
-            internship at Orbital Eye, I got a chance to improve and learn new skills, and also get
-            to know more about satellite monitoring. My interest in space had already been piqued
-            beforehand, but it taught me so much more about it.
-          </p>
-        </div>
-        <div class="wrapper_right">
-          <img src="public/pictures/chill.jpg" class="profile_picture" alt="me" />
-          <img src="public/pictures/mud.jpg" class="profile_picture" alt="me" />
-      </div>
+         <div class="wrapper_right">
+          
+            <div class="slideshow-container">
+
+              <div class="mySlides fade" id="photos">
+                <img src="public/pictures/chill.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade"id="photos">
+                <img src="public/pictures/snow.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade"id="photos">
+                <img src="public/pictures/mud.jpg" style="width:100%">
+              </div>
+              </div>
+                  
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+            </div>
+
+         </div>
+
+
+          <script>
+          let slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "flex";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000);
+          }
+          </script>
+
     </div>
     <footer class="footerIcons">
-      <h2>Let's keep in touch</h2>
+      <h1>Let's keep in touch</h1>
       <div class="iconArea">
         <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
-          <img src="/public/pictures/linkedin.png" alt="linkedin icon" />
+          <img src="/public/pictures/linkedin.svg" alt="linkedin icon" />
         </a>
-        <a class="icon" href="mailto:mariannalber.design@gamil.com" target="_blank">
-          <img src="/public/pictures/gmail.png" alt="email icon" />
+        <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+          <img src="/public/pictures/gmail.svg" alt="email icon" />
         </a>
       </div>
       <p class="copyright">
-        <b>Copyright © 2022 Mariann Alber. All rights reserved.</b>
+        Copyright © 2022 Mariann Alber. All rights reserved.
       </p>
 
       <p></p>
