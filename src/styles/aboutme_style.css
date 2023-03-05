@@ -248,7 +248,7 @@ font-family: "karla", sans-serif;
 
   .profile_picture {
     height: auto;
-    width: 30%;
+    width: 50%;
   }
 }
 @media (min-width: 600px) {
