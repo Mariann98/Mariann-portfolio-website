@@ -161,6 +161,7 @@ p {
 }
 
 .wrapper_left {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,6 +324,10 @@ font-family: "karla", sans-serif;
     justify-content: flex-end;
     align-items: center;
   }
+  .wrapper_left {
+    margin-top: 0em; 
+
+    }
   .about_me_wrapper {
     display: flex;
     flex-direction: row;
