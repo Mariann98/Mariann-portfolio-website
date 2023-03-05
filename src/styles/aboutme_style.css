@@ -169,7 +169,8 @@ p {
   
 }
 #about_me_text {
-  width: 80%;
+  width: 100%;
+  height: auto;
 }
 #about_me_text_more {
   object-fit: contain;
@@ -276,7 +277,7 @@ font-family: "karla", sans-serif;
   h1 {
     font-size: 2.2em;
   }
-
+  
   h2 {
     font-size: 1.5em;
   }
@@ -324,7 +325,9 @@ font-family: "karla", sans-serif;
     height: auto;
     width: 80%;
   }
-
+  #about_me_text {
+    width: 70%;
+  }
   .wrapper_right {
     display: flex;
     justify-content: flex-end;
