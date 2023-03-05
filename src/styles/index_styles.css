@@ -108,6 +108,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2em;
   
 }
 .intro p {
@@ -116,7 +117,7 @@ h2 {
   font-size: 1em;
   text-align: center;
   max-width: 15em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .portfolio {
   display: flex;
