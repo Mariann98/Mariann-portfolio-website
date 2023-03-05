@@ -252,6 +252,9 @@ img {
     justify-content: center;
     text-align: center;
   }
+  .navbar_right {
+    display: flex;
+  }
 
   .prso {
     font-size: 1.3em;
@@ -266,10 +269,7 @@ img {
     justify-content: center;
     margin-top: 2em;
   }
-  .navbar_right {
-    display: block;
-  }
-
+ 
   iframe video{
     height:70%;
     width:auto;
