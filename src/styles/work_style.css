@@ -46,6 +46,10 @@ body {
   margin-right: 2em;
   display: none;
 }
+.navbar_left a:hover {
+  color: #043132;
+  transition: 0.5s;
+}
 .logo {
   height: auto;
   width: 50%;

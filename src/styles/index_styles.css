@@ -47,6 +47,10 @@ body {
   justify-content: flex-end;
   margin-right: 2em;
 }
+.navbar_left a:hover {
+  color: #043132;
+  transition: 0.5s;
+}
 .logo {
   height: auto;
   width: 50%;
