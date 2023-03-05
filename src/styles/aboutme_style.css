@@ -156,7 +156,7 @@ p {
 }
 .wrapper_right {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -316,6 +316,12 @@ font-family: "karla", sans-serif;
   .profile_picture {
     height: auto;
     width: 80%;
+  }
+
+  .wrapper_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   .about_me_wrapper {
     display: flex;
