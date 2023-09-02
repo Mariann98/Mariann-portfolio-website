@@ -240,7 +240,7 @@ iframe video {
 }
 .numbertext {
   position: absolute;
-  bottom: -5%; /* Change top to bottom */
+  bottom: -7%; /* Change top to bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
   font-family: "karla", sans-serif;
