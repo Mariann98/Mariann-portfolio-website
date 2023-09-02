@@ -244,6 +244,7 @@ iframe video {
   transform: translateX(-50%);
   font-family: "karla", sans-serif;
   font-style: italic;
+  white-space: nowrap;
 }
 .prev,
 .next {
