@@ -236,7 +236,7 @@ iframe video {
   text-align: center; /* Add this line to center-align the contents inside the container */
 }
 .mySlides img {
-  width: 20%;
+  width: 60%;
 }
 .numbertext {
   position: absolute;
@@ -558,6 +558,9 @@ iframe video {
     text-align: center;
     font-size: 1.1em;
     padding-bottom: 1em;
+  }
+  .mySlides img {
+    width: 20%;
   }
 }
 @media (min-width: 1024px) {
