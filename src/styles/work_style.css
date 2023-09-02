@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 :root {
   --beige1: #279b59;
   --light1: #f2f2f2;
@@ -11,11 +11,11 @@
 }
 
 body {
-  font-family: 'karla', sans-serif;
+  font-family: "karla", sans-serif;
   color: var(--dark1);
   background-color: var(--light1);
   margin-left: 2em;
-   margin-right: 2em;
+  margin-right: 2em;
 }
 .navbar {
   display: flex;
@@ -55,7 +55,9 @@ body {
   width: 50%;
 }
 
-li { padding: 0.2em 0em; }
+li {
+  padding: 0.2em 0em;
+}
 li a {
   color: var(--beige1);
   text-align: center;
@@ -78,7 +80,7 @@ ul {
 }
 
 h1 {
-  font-family: 'karla', cursive;
+  font-family: "karla", cursive;
 
   font-weight: 500;
   font-style: normal;
@@ -132,16 +134,19 @@ img {
 .pic {
   height: auto;
   width: 100%;
-  border-radius: 0.5em;}
+  border-radius: 0.5em;
+}
 .sitemap {
   height: auto;
   width: 100%;
-  border-radius: 0.5em;}
+  border-radius: 0.5em;
+}
 .box {
   height: auto;
   width: 50%;
   border-radius: 1em;
-  border-radius: 0.5em;}
+  border-radius: 0.5em;
+}
 .work_wrapper_main {
   display: flex;
   flex-direction: column;
@@ -153,7 +158,8 @@ img {
   height: auto;
   width: 100%;
   margin-top: 1em;
-  border-radius: 0.5em;}
+  border-radius: 0.5em;
+}
 .work_wrapper_problem {
   width: 100;
   font-size: 1em;
@@ -176,8 +182,8 @@ img {
   margin: 1em 0 1em 0;
   border-radius: 0.5em;
 }
-  
-  .pictures1 {
+
+.pictures1 {
   height: auto;
   width: 60%;
   margin: 1em 0 1em 0;
@@ -219,17 +225,50 @@ img {
   margin-top: 1em;
   font-weight: 900;
 }
-  iframe video{
-    height:20%;
-    width:auto;
-  }
-
+iframe video {
+  height: 20%;
+  width: auto;
+}
+/* CSS for Positioning Next and Back Arrows */
+.container {
+  position: relative;
+  margin: 0 auto; /* Add this line to center the container horizontally */
+  text-align: center; /* Add this line to center-align the contents inside the container */
+}
+.mySlides img {
+  width: 20%;
+}
+.numbertext {
+  position: absolute;
+  bottom: -5%; /* Change top to bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-family: "karla", sans-serif;
+  font-style: italic;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
 @media (min-width: 640px) {
   body {
     margin-left: 5em;
     margin-right: 5em;
   }
-  
+
   h1 {
     font-weight: 500;
     font-style: normal;
@@ -273,10 +312,10 @@ img {
     justify-content: center;
     margin-top: 2em;
   }
- 
-  iframe video{
-    height:70%;
-    width:auto;
+
+  iframe video {
+    height: 70%;
+    width: auto;
   }
   .work_wrapper {
     display: flex;
@@ -381,7 +420,7 @@ img {
   li a {
     font-size: 1.5em;
     margin-right: 1.5em;
-}
+  }
 
   h1 {
     font-weight: 500;
@@ -526,6 +565,14 @@ img {
     margin-left: 15em;
     margin-right: 15em;
   }
+  .numbertext {
+    position: absolute;
+    bottom: -3%; /* Change top to bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-family: "karla", sans-serif;
+    font-style: italic;
+  }
 
   h1 {
     font-weight: 500;
@@ -538,7 +585,7 @@ img {
   li a {
     font-size: 1.8em;
     margin-right: 2em;
-}
+  }
   h4 {
     display: flex;
     font-size: 1.6em;
@@ -634,7 +681,7 @@ img {
     font-size: 1.4em;
     font-weight: 600;
   }
-  .link p{
+  .link p {
     display: flex;
     font-size: 1.4em;
     color: var(--beige1);
@@ -672,10 +719,9 @@ img {
     white-space: nowrap;
   }
 
-
   li a {
     font-size: 1.8em;
-}
+  }
   h1 {
     font-weight: 500;
     font-style: normal;
@@ -773,17 +819,15 @@ img {
   }
 }
 @media (min-width: 1536px) {
-  
   body {
     margin-left: 25em;
     margin-right: 25em;
   }
- 
 
   li a {
     font-size: 2em;
     margin-right: 3em;
-}
+  }
 
   h1 {
     font-weight: 500;
@@ -832,7 +876,7 @@ img {
   }
   h6 {
     font-size: 1.8em;
- }
+  }
   p {
     font-size: 1.6em;
   }
@@ -840,7 +884,7 @@ img {
     font-size: 1.6em;
     margin-left: 1em;
   }
- 
+
   .work_wrapper_main {
     display: flex;
     flex-direction: row;
@@ -890,5 +934,8 @@ img {
   .project_selection_link,
   .project_selection_link_next a:hover {
     color: #8c674f;
+  }
+  * {
+    box-sizing: border-box;
   }
 }
