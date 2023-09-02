@@ -229,20 +229,19 @@ iframe video {
   height: 20%;
   width: auto;
 }
-/* CSS for Positioning Next and Back Arrows */
 .container {
   position: relative;
-  margin: 0 auto; /* Add this line to center the container horizontally */
-  text-align: center; /* Add this line to center-align the contents inside the container */
+  margin: 0 auto;
+  text-align: center;
 }
 .mySlides img {
   width: 50%;
 }
 .numbertext {
   position: absolute;
-  bottom: -5%; /* Change top to bottom */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "karla", sans-serif;
   font-style: italic;
 }
