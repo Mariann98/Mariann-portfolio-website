@@ -575,6 +575,7 @@ iframe video {
     transform: translateX(-50%); /* Center horizontally */
     font-family: "karla", sans-serif;
     font-style: italic;
+    white-space: nowrap;
   }
 
   h1 {
