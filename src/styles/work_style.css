@@ -236,7 +236,7 @@ iframe video {
   text-align: center; /* Add this line to center-align the contents inside the container */
 }
 .mySlides img {
-  width: 60%;
+  width: 50%;
 }
 .numbertext {
   position: absolute;
