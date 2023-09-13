@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 
 :root {
   --beige1: #279b59;
@@ -16,28 +15,27 @@
 body {
   font-family: "karla", sans-serif;
   font-weight: 200;
-  color: var(--light1);
+  color: var(--dark1);
   margin-left: 1em;
   margin-right: 1em;
 }
 body {
-	background: linear-gradient(-45deg, #539095, #48aab3, #279b59, #fdfffe);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100%;
+  background: var(--light1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
 }
 
-
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .wave {
@@ -105,7 +103,7 @@ body {
   width: 50%;
 }
 li a {
-  color: var(--light1);
+  color: var(--dark1);
   text-align: center;
   text-decoration: none;
   list-style-type: none;
@@ -125,16 +123,16 @@ ul {
 }
 
 h1 {
-  color: var(--light1);
+  color: var(--beige1);
   font-style: normal;
-  text-align: center;
+  text-align: left;
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 h2 {
   font-weight: 500;
-  color: var(--light1);
+  color: var(--beige1);
   font-style: normal;
   text-align: left;
   font-size: 1.2em;
@@ -158,6 +156,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 75%;
 }
 
 .wrapper_left {
@@ -166,7 +165,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  
+  width: 25%;
 }
 #about_me_text {
   width: 100%;
@@ -174,20 +173,25 @@ p {
 }
 #about_me_text_more {
   object-fit: contain;
+  width: 25%;
+}
+#about_me_text_more1 {
+  object-fit: contain;
+  width: 75%;
+}
+#about_me_text_more2 {
+  object-fit: contain;
   width: 100%;
-  height: 100%;
 }
 
-
 .slideshow-container {
-  position:relative;
+  position: relative;
   margin: 2em;
   width: 40vw;
   height: 40vh;
 }
 
-
-#photos img{
+#photos img {
   border-radius: 1em;
   height: auto;
   width: 80%;
@@ -204,8 +208,12 @@ p {
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 footer {
   display: flex;
@@ -232,10 +240,9 @@ footer {
 .copyright {
   font-size: 1em;
   margin-bottom: 1em;
-font-family: "karla", sans-serif;
+  font-family: "karla", sans-serif;
   font-weight: 200;
 }
-
 
 @media (min-width: 360px) {
   body {
@@ -277,7 +284,7 @@ font-family: "karla", sans-serif;
   h1 {
     font-size: 2.2em;
   }
-  
+
   h2 {
     font-size: 1.5em;
   }
@@ -292,12 +299,11 @@ font-family: "karla", sans-serif;
     width: 50%;
   }
   .slideshow-container {
-    position:relative;
+    position: relative;
     margin: 2em;
     width: 20vw;
     height: 20vh;
   }
-  
 }
 
 @media (min-width: 1024px) {
@@ -332,11 +338,12 @@ font-family: "karla", sans-serif;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 75%;
   }
   .wrapper_left {
-    margin-top: 0em; 
-
-    }
+    margin-top: 0em;
+    width: 25%;
+  }
   .about_me_wrapper {
     display: flex;
     flex-direction: row;
@@ -348,7 +355,7 @@ font-family: "karla", sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     position: relative;
   }
 }
@@ -365,7 +372,7 @@ font-family: "karla", sans-serif;
   }
 
   h2 {
-    font-size: 2.2em;
+    font-size: 4em;
   }
   p {
     font-size: 1.6em;
@@ -381,15 +388,14 @@ font-family: "karla", sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     position: relative;
   }
   .profile_picture {
     height: auto;
-    width: 100%;
+    width: 70%;
     margin: 1em;
     border-radius: 1em;
- 
   }
 
   .icon img {
