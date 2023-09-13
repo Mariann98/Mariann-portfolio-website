@@ -140,13 +140,11 @@ h2 {
 .about_me_wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .about_me_wrapper_reverse {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 p {
@@ -155,7 +153,6 @@ p {
 .wrapper_right {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 75%;
 }
 
@@ -164,7 +161,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   width: 25%;
 }
 #about_me_text {
