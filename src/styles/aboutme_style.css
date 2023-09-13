@@ -169,11 +169,11 @@ p {
 }
 #about_me_text_more {
   object-fit: contain;
-  width: 65%;
+  width: 70%;
 }
 #about_me_text_more1 {
   object-fit: contain;
-  width: 65%;
+  width: 100%;
 }
 #about_me_text_more2 {
   object-fit: contain;
