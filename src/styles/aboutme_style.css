@@ -173,11 +173,11 @@ p {
 }
 #about_me_text_more {
   object-fit: contain;
-  width: 25%;
+  width: 65%;
 }
 #about_me_text_more1 {
   object-fit: contain;
-  width: 75%;
+  width: 65%;
 }
 #about_me_text_more2 {
   object-fit: contain;
@@ -334,6 +334,7 @@ footer {
   #about_me_text {
     width: 70%;
   }
+
   .wrapper_right {
     display: flex;
     justify-content: flex-end;
@@ -376,6 +377,18 @@ footer {
   }
   p {
     font-size: 1.6em;
+  }
+  #about_me_text_more {
+    object-fit: contain;
+    width: 25%;
+  }
+  #about_me_text_more1 {
+    object-fit: contain;
+    width: 75%;
+  }
+  #about_me_text_more2 {
+    object-fit: contain;
+    width: 100%;
   }
   .about_me_wrapper {
     display: flex;
