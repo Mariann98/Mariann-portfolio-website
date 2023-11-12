@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 
 :root {
-  --beige1: #279b59;
+  --beige1: #009473;
   --light1: #f2f2f2;
   --dark1: #202020;
 }
@@ -20,9 +20,11 @@ body {
   margin-right: 1em;
 }
 body {
-  background: var(--light1);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background-image: url("/public/pictures/blob-scene-haikei.svg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
 }
 

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Koulen&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 :root {
-  --beige1: #279b59;
+  --beige1: #009473;
   --light1: #f2f2f2;
   --dark1: #202020;
 }
@@ -11,9 +11,13 @@
 }
 
 body {
-  font-family: "karla", sans-serif;
+  font-family: "Karla", sans-serif;
   color: var(--dark1);
-  background-color: var(--light1);
+  background-image: url("/public/pictures/blob-scene-haikei.svg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-left: 2em;
   margin-right: 2em;
 }
@@ -80,8 +84,8 @@ ul {
 }
 
 h1 {
-  font-family: "karla", cursive;
-
+  font-family: "Koulen", cursive;
+  color: var(--beige1);
   font-weight: 500;
   font-style: normal;
   text-align: center;
@@ -271,6 +275,7 @@ iframe video {
   }
 
   h1 {
+    font-family: "Koulen", cursive;
     font-weight: 500;
     font-style: normal;
     text-align: center;
