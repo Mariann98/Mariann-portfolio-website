@@ -48,7 +48,6 @@ body {
   align-items: right;
   justify-content: flex-end;
   margin-right: 2em;
-  display: none;
 }
 .navbar_left a:hover {
   color: #043132;
