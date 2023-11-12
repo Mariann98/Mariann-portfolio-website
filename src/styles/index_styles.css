@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Koulen&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 :root {
-  --beige1: #279b59;
+  --beige1: #009473;
   --light1: #f2f2f2;
   --dark1: #202020;
 }
@@ -14,7 +14,11 @@
 body {
   font-family: "karla", sans-serif;
   color: var(--dark1);
-  background-color: var(--light1);
+  background-image: url("/public/pictures/blob-scene-haikei.svg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -449,7 +453,7 @@ footer {
   }
 
   h2 {
-    font-size: 6em;
+    font-size: 5em;
   }
   p {
     font-size: 1.5em;
@@ -462,7 +466,7 @@ footer {
     color: var(--dark1);
     font-weight: 500;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     max-width: 30em;
   }
