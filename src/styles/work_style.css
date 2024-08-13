@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Koulen&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 :root {
-  --beige1: #009473;
+  --beige1: #496EAF;
   --light1: #f2f2f2;
   --dark1: #202020;
 }
@@ -9,15 +9,19 @@
   margin: 0px;
   padding: 0px;
 }
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/pictures/Fonts/FuturaCyrillicBook.ttf') format('truetype'),
+  url('/public/pictures/Fonts/FuturaCyrillicMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: 'MyFont', sans-serif;
   color: var(--dark1);
-  background-image: url("/public/pictures/blob-scene-haikei.svg");
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+
   margin-left: 2em;
   margin-right: 2em;
 }
@@ -99,7 +103,8 @@ h4 {
   margin-top: 1em;
   margin-bottom: 0.5em;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  text-transform: uppercase;
 }
 h5 {
   display: flex;
@@ -245,7 +250,7 @@ iframe video {
   bottom: -5%;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "karla", sans-serif;
+  font-family: "MyFont", sans-serif;
   font-style: italic;
   white-space: nowrap;
 }
@@ -259,7 +264,7 @@ iframe video {
   font-size: 1.5em;
   padding: 15px;
   cursor: pointer;
-  border-radius: 10%; /* Make the background circular */
+  border-radius: 10%;
 }
 .prev {
   left: 0;
@@ -289,7 +294,6 @@ iframe video {
     color: var(--beige1);
     margin-top: 1em;
     margin-bottom: 0.5em;
-    justify-content: left;
   }
 
   h5 {
@@ -442,7 +446,6 @@ iframe video {
     color: var(--beige1);
     margin-top: 1em;
     margin-bottom: 0.5em;
-    justify-content: left;
   }
   h6 {
     display: flex;
@@ -578,7 +581,7 @@ iframe video {
     bottom: -3%; /* Change top to bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
-    font-family: "karla", sans-serif;
+    font-family: "MyFont", sans-serif;
     font-style: italic;
     white-space: nowrap;
   }
@@ -601,7 +604,6 @@ iframe video {
     color: var(--beige1);
     margin-top: 1em;
     margin-bottom: 0.5em;
-    justify-content: left;
   }
   .prso {
     font-size: 1.6em;
@@ -745,7 +747,6 @@ iframe video {
     font-size: 2em;
     color: var(--beige1);
     margin-top: 1em;
-    justify-content: left;
   }
   .prso {
     font-size: 1.8em;
@@ -873,7 +874,6 @@ iframe video {
     font-size: 2.5em;
     color: var(--beige1);
     margin-top: 1em;
-    justify-content: left;
   }
   h5 {
     display: flex;
