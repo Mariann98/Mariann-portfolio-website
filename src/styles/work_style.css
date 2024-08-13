@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Koulen&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 :root {
   --beige1: #496EAF;
-  --light1: #f2f2f2;
+  --light1: #f5f5f5;
   --dark1: #202020;
 }
 
@@ -25,65 +25,42 @@ body {
   margin-left: 2em;
   margin-right: 2em;
 }
-.navbar {
+.side-nav {
+  width: 50%; /* Make it span the full width of the viewport */
+  background-color: #f5f5f5;
+  padding: 10px 50px; /* Adjust padding as needed */
   display: flex;
-  position: sticky;
-  align-items: center;
-  justify-content: space-between;
-  top: 0px;
-  z-index: 5;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 1em;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: 100%;
-}
-.navbar_left {
-  display: flex;
-  align-items: left;
-  justify-content: flex-start;
-  margin-left: 2em;
-}
-.navbar_right {
-  display: flex;
-  align-items: right;
-  justify-content: flex-end;
-  margin-right: 2em;
-}
-.navbar_left a:hover {
-  color: #043132;
-  transition: 0.5s;
-}
-.logo {
-  height: auto;
-  width: 50%;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out logo and links */
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 0;
+  left: 50%; /* Position the left edge of the nav at the center of the viewport */
+  transform: translateX(-50%); /* Center the nav horizontally */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 4px rgba(73, 110, 175, 0.1); /* Optional: Add shadow for better visibility */
+  border-radius: 15px; 
+
 }
 
-li {
-  padding: 0.2em 0em;
+.side-nav .logo {
+  height: auto; /* Adjust based on your logo’s dimensions */
 }
-li a {
-  color: var(--beige1);
-  text-align: center;
-  text-decoration: none;
-  list-style-type: none;
-  font-size: 1.2em;
-  white-space: nowrap;
-  margin-right: 1em;
-}
-ul {
-  margin-top: 1em;
-  margin-bottom: 1em;
+
+.side-nav .nav-links {
   display: flex;
-  justify-content: flex-end;
-  list-style: none;
+  gap: 20px;
 }
-.navbar_left a:hover {
+
+.side-nav .nav-links a {
+  text-decoration: none;
   color: var(--beige1);
-  transition: 0.5s;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.side-nav .logo img {
+  height: 40px;
 }
 
 h1 {
@@ -304,9 +281,7 @@ iframe video {
     justify-content: center;
     text-align: center;
   }
-  .navbar_right {
-    display: flex;
-  }
+ 
 
   .prso {
     font-size: 1.3em;
