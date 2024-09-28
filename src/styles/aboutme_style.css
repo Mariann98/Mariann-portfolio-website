@@ -219,6 +219,19 @@ footer {
     height: auto;
     width: 50%;
   }
+  .side-nav .nav-links a {
+    display: none; /* Hide all links initially */
+  }
+
+  /* Display only the 'About Me' link */
+  .side-nav .nav-links a[href="/portfolio.html"] {
+    display: inline-block; /* Show only the About Me link */
+  }
+
+  /* Optionally, adjust the logo size for smaller screens */
+  .side-nav .logo img {
+    width: 80px; /* Adjust the size of the logo */
+  }
 }
 @media (min-width: 600px) {
   body {
