@@ -219,10 +219,6 @@ footer {
     height: auto;
     width: 50%;
   }
-  .side-nav .nav-links a {
-    display: none; /* Hide all links initially */
-  }
-
 }
 @media (min-width: 600px) {
   body {
