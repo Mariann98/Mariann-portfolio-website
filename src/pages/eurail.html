@@ -58,25 +58,25 @@ While planning my trip to the Christmas markets in Germany, I encountered severa
   <li><b>Typing location:</b> Location search works well, highlighting typed letters and offering suggestions even in the case of typos. It also provides helpful error messages when a location doesn’t exist and suggests possible alternatives.
 </li>
   <li><b>Multilingual support:</b> The search results display location names in both the local language and English, such as "Cologne (Koeln)".</li>
-  <li>Station interaction: Adding and removing stations is straightforward and intuitive.</li>
-  <li>Traveler selection: The “Confirm” button gets disabled if there’s an error in traveler input, preventing submission mistakes.</li>
-  <li>Date input behavior: If no date is entered, the last-used date automatically appears after the search. </li>
+  <li><b>Station interaction:</b> Adding and removing stations is straightforward and intuitive.</li>
+  <li><b>Traveler selection:</b> The “Confirm” button gets disabled if there’s an error in traveler input, preventing submission mistakes.</li>
+  <li><b>Date input behavior:</b> If no date is entered, the last-used date automatically appears after the search. </li>
 </ol>
       <br> <br>
   
         <p>  <b>Areas for improvement:</b> </p>
 <ol>
-  <li>Inconsistent icons: Some icons are solid while others are outlined, leading to a disconnected visual experience.
+  <li><b>Inconsistent icons:</b> Some icons are solid while others are outlined, leading to a disconnected visual experience.
 </li>
-  <li>Font sizes: The text uses 12px and 14px, which are not aligned with WCAG standards, potentially making it harder for users with visual impairments to read comfortably. 
+  <li><b>Font sizes:</b> The text uses 12px and 14px, which are not aligned with WCAG standards, potentially making it harder for users with visual impairments to read comfortably. 
 </li>
-  <li>Inconsistent box sizes: Input boxes/buttons vary in size (36px, 38px, 40px), creating a lack of uniformity.</li>
-  <li>Button text: Most buttons use lowercase text, except for the search button, which is in all caps.</li>
-  <li>Departure and arrival visibility: The departure and arrival points are not clearly distinguishable, making it hard to differentiate which one is selected. Additionally, they disappear after the search, making it difficult to track the chosen option.</li>
-  <li>Date input behavior: The date field should allow only numerical input.</li>
-  <li>Date clear button: The 'X' to clear the date doesn’t work, only the 'Clear' button does.</li>
-    <li>Time selection: Time input uses two dropdowns (for hours and minutes), which is tedious. Scrolling through long lists for time (e.g., 23:50) is slow, and coordinating two dropdowns adds unnecessary complexity. A simpler, faster input method is needed.</li>
-    <li>Traveler input alignment: The traveler number input is left-aligned, but centering it would provide a cleaner look. Only numbers should be allowed, no text.</li>
+  <li><b>Inconsistent box sizes:</b> Input boxes/buttons vary in size (36px, 38px, 40px), creating a lack of uniformity.</li>
+  <li><b>Button text:</b> Most buttons use lowercase text, except for the search button, which is in all caps.</li>
+  <li><b>Departure and arrival visibility: </b>The departure and arrival points are not clearly distinguishable, making it hard to differentiate which one is selected. Additionally, they disappear after the search, making it difficult to track the chosen option.</li>
+  <li><b>Date input behavior:</b> The date field should allow only numerical input.</li>
+  <li><b>Date clear button:</b> The 'X' to clear the date doesn’t work, only the 'Clear' button does.</li>
+    <li><b>Time selection:</b> Time input uses two dropdowns (for hours and minutes), which is tedious. Scrolling through long lists for time (e.g., 23:50) is slow, and coordinating two dropdowns adds unnecessary complexity. A simpler, faster input method is needed.</li>
+    <li><b>Traveler input alignment: </b>The traveler number input is left-aligned, but centering it would provide a cleaner look. Only numbers should be allowed, no text.</li>
 </ol>
       
         </div>
@@ -86,17 +86,17 @@ While planning my trip to the Christmas markets in Germany, I encountered severa
           <p>
          <b>Key changes I made</b>
 <ol>
-  <li>Unified icon design: I made all icons solid to maintain consistency, as there were previously mixed styles (solid and outlined). The arrow icons had inconsistencies with the arrowhead shapes, which have now been standardized.
+  <li><b>Unified icon design:</b> I made all icons solid to maintain consistency, as there were previously mixed styles (solid and outlined). The arrow icons had inconsistencies with the arrowhead shapes, which have now been standardized.
 </li>
-  <li>Font size consistency: Previously, font sizes ranged from 10-14px, with an exception for location text, which was 16px. Now, all primary text is set to 16px for improved readability, and less important text has been reduced to 14px, aligning the design with accessibility (WCAG) standards.
+  <li><b>Font size consistency: </b>Previously, font sizes ranged from 10-14px, with an exception for location text, which was 16px. Now, all primary text is set to 16px for improved readability, and less important text has been reduced to 14px, aligning the design with accessibility (WCAG) standards.
 </li>
-  <li>Color contrast improvement: Although the brand colors (green and orange) align with the Eurail brand, their contrast ratios did not meet the WCAG standard of 4.5:1. Most of them had a 2:1 ratio, which strains readability. The contrast has been adjusted to improve legibility and accessibility.</li>
-  <li>Blue variations minimized: The design previously used too many shades of blue, which created unnecessary complexity. These have been minimized for a simpler, more cohesive design experience.</li>
-  <li>Consistent date format: The date format has been standardized to avoid confusion, especially for international users. Instead of using both "13 Sept 2024" and "13/09/24," the format now includes month abbreviations (e.g., "13 Sept 2024") for clarity.</li>
-  <li>Dominant date and earlier/later buttons: The "Earlier" and "Later" buttons are now more prominent, and the date field includes an icon and greater visual emphasis to make them stand out.</li>
-   <li>Consistent alignment: All elements are now aligned consistently. Previously, the top bar, breadcrumbs, directions, and timetable had different starting points (ranging from 190px to 260px). Now, everything starts from the same alignment for a cleaner layout.</li>
-   <li>Enhanced timetable selection indicator: A previously thin black line indicating the selected timetable was hard to notice. I made it more dominant for better visibility, ensuring users can clearly see which timetable is selected.</li>
-   <li>Dynamic navigation: To optimize screen space, the top navigation and breadcrumbs could be made dynamic. As users scroll down, the navigation would disappear, allowing more focus on the content. When scrolling up, the navigation and breadcrumbs would reappear for easy access.</li>
+  <li><b>Color contrast improvement: </b>Although the brand colors (green and orange) align with the Eurail brand, their contrast ratios did not meet the WCAG standard of 4.5:1. Most of them had a 2:1 ratio, which strains readability. The contrast has been adjusted to improve legibility and accessibility.</li>
+  <li><b>Blue variations minimized:</b> The design previously used too many shades of blue, which created unnecessary complexity. These have been minimized for a simpler, more cohesive design experience.</li>
+  <li><b>Consistent date format:</b> The date format has been standardized to avoid confusion, especially for international users. Instead of using both "13 Sept 2024" and "13/09/24," the format now includes month abbreviations (e.g., "13 Sept 2024") for clarity.</li>
+  <li><b>Dominant date and earlier/later buttons:</b> The "Earlier" and "Later" buttons are now more prominent, and the date field includes an icon and greater visual emphasis to make them stand out.</li>
+   <li><b>Consistent alignment: </b>All elements are now aligned consistently. Previously, the top bar, breadcrumbs, directions, and timetable had different starting points (ranging from 190px to 260px). Now, everything starts from the same alignment for a cleaner layout.</li>
+   <li><b>Enhanced timetable selection indicator: </b>A previously thin black line indicating the selected timetable was hard to notice. I made it more dominant for better visibility, ensuring users can clearly see which timetable is selected.</li>
+   <li><b>Dynamic navigation:</b> To optimize screen space, the top navigation and breadcrumbs could be made dynamic. As users scroll down, the navigation would disappear, allowing more focus on the content. When scrolling up, the navigation and breadcrumbs would reappear for easy access.</li>
 </ol>
           </p>
         </div>
