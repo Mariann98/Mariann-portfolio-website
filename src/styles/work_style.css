@@ -260,7 +260,9 @@ iframe video {
   .side-nav .nav-links a:first-child {
     display: none;
   }
-}
+ #rijksstuido {
+    margin-top: 2em;
+  }
 @media (min-width: 640px) {
   body {
     margin-left: 5em;
