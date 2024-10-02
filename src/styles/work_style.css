@@ -250,6 +250,15 @@ iframe video {
 .next {
   right: 0;
 }
+.side-nav .nav-links {
+    display: flex; /* Show nav-links */
+    gap: 20px; /* Space between links */
+  }
+
+  /* Hide the "PORTFOLIO" link */
+  .side-nav .nav-links a:first-child {
+    display: none;
+  }
 @media (min-width: 640px) {
   body {
     margin-left: 5em;
