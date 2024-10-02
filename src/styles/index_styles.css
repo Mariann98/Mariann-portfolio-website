@@ -195,6 +195,15 @@ footer {
 }
 
 @media (min-width: 360px) {
+  .side-nav .nav-links {
+    display: flex; /* Show nav-links */
+    gap: 20px; /* Space between links */
+  }
+
+  /* Hide the "PORTFOLIO" link */
+  .side-nav .nav-links a:first-child {
+    display: none;
+  }
   body {
     margin-left: 2em;
     margin-right: 2em;
