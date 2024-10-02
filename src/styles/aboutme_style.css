@@ -233,6 +233,15 @@ footer {
   footer {
     width: 100% auto;
   }
+ .side-nav {
+    align-items: center;
+    justify-content: center; /* Center the logo and content horizontally */
+  }
+  
+  .side-nav .nav-links {
+    display: none; /* Hidden by default on smaller screens */
+  }
+  
 }
 
 @media (min-width: 768px) {
