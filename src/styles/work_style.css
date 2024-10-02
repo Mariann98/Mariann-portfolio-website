@@ -250,9 +250,8 @@ iframe video {
 .next {
   right: 0;
 }
-
-@media (min-width: 640px) {
- .side-nav .nav-links {
+@media (min-width: 360px) {
+  .side-nav .nav-links {
     display: flex; /* Show nav-links */
     gap: 20px; /* Space between links */
   }
@@ -261,6 +260,8 @@ iframe video {
   .side-nav .nav-links a:first-child {
     display: none;
   }
+}
+@media (min-width: 640px) {
   body {
     margin-left: 5em;
     margin-right: 5em;
