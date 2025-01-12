@@ -163,6 +163,135 @@ h3 {
     background-color: #405a6b; /* Hover color for buttons */
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 4rem; /* Reduce sidebar width */
+    justify-content: space-around; /* Adjust spacing */
+  }
+
+  .sidenav a {
+    font-size: 0.9rem; /* Smaller font for links */
+    margin-bottom: 1.5rem; /* Reduce spacing between links */
+  }
+
+  .logo {
+    width: 80px; /* Reduce logo size */
+  }
+
+  .main {
+    margin-left: 6rem; /* Adjust main content margin */
+    padding: 1rem;
+  }
+
+  .project-page {
+    margin: 2rem 5rem; /* Reduce margins on smaller screens */
+    padding: 1rem;
+  }
+
+  .project-section img {
+    width: 80%; /* Make images smaller */
+  }
+
+  footer {
+    margin: 1.5em 0; /* Adjust spacing for footer */
+    padding: 0 2rem;
+  }
+
+  .iconArea {
+    flex-direction: row; /* Stack icons vertically */
+    align-items: center;
+  }
+
+  .icon img {
+    margin: 0.5em; /* Reduce spacing for icons */
+    width: 1.5em; /* Smaller icon size */
+  }
+
+  .navigation-buttons {
+    flex-direction: row; /* Stack buttons vertically */
+    gap: 1rem; /* Reduce spacing between buttons */
+  }
+
+  .nav-btn {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.5rem 1rem; /* Reduce button padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidenav {
+    width: 3rem; /* Further reduce sidebar width */
+  }
+
+  .sidenav a {
+    font-size: 0.8rem; /* Even smaller font for links */
+  }
+
+  .logo {
+    width: 60px; /* Further reduce logo size */
+  }
+
+  .main {
+    margin-left: 3rem; /* Further adjust main content margin */
+    padding: 0.5rem;
+  }
+
+  .project-page {
+    margin: 1rem 1rem; /* Further reduce margins */
+    padding: 0.5rem;
+  }
+
+  .project-section img {
+    width: 100%; /* Use full width for smaller screens */
+  }
+
+  footer {
+    margin: 1em; /* Reduce spacing for footer */
+    padding: 0 2rem;
+  }
+
+  .icon img {
+    width: 1.2em; /* Further reduce icon size */
+  }
+
+  .nav-btn {
+    font-size: 0.8rem; /* Smaller button text */
+    padding: 0.4rem 0.8rem; /* Further reduce button padding */
+  }
+}
+.main {
+  margin-left: calc(5rem + 1rem); /* Sidebar width + extra spacing */
+  padding: 1.5rem;
+}
+
+.project-page {
+  margin-left: calc(5rem + 1rem); /* Sidebar width + extra spacing */
+  margin-right: 1rem; /* Ensure there's room on the right */
+  padding: 1rem;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .main {
+    margin-left: calc(4rem + 1rem); /* Adjust for smaller sidebar */
+  }
+
+  .project-page {
+    margin-left: calc(4rem + 1rem); /* Adjust for smaller sidebar */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    margin-left: calc(3rem + 0.5rem); /* Further adjust for narrower sidebar */
+  }
+
+  .project-page {
+    margin-left: calc(3rem + 0.5rem); /* Further adjust for narrower sidebar */
+  }
+}
+
 </style>
 </head>
 <body>
