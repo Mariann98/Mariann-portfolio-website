@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Karla:wght@200;300;400&family=Koulen&family=Quicksand:wght@400;600&family=Waiting+for+the+Sunrise&display=swap");
 :root {
-  --beige1: #009473;
-  --light1: #f2f2f2;
+  --beige1: #496EAF;
+  --light1: #f5f5f5;
   --dark1: #202020;
 }
-
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public/pictures/Fonts/FuturaCyrillicBook.ttf') format('truetype'),
+  url('/public/pictures/Fonts/FuturaCyrillicMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -12,51 +18,78 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: "karla", sans-serif;
+  font-family: "MyFont", sans-serif;
   color: var(--dark1);
-  background-image: url("/public/pictures/blob-scene-haikei.svg");
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-left: 1em;
   margin-right: 1em;
+  background-color: #f5f5f5;
 }
-.navbar {
+
+.side-nav {
+  width: 50%; /* Make it span the full width of the viewport */
+  background-color: #f5f5f5;
+  padding: 10px 50px; /* Adjust padding as needed */
   display: flex;
-  position: sticky;
-  align-items: center;
-  justify-content: space-between;
-  top: 0px;
-  z-index: 5;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 1em;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
-  padding: 1em;
-  width: 100%;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out logo and links */
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 0;
+  left: 50%; /* Position the left edge of the nav at the center of the viewport */
+  transform: translateX(-50%); /* Center the nav horizontally */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 4px rgba(73, 110, 175, 0.1); /* Optional: Add shadow for better visibility */
+  border-radius: 15px; 
+
 }
-.navbar_left {
+
+.side-nav .logo {
+  height: auto; /* Adjust based on your logo’s dimensions */
+}
+
+.side-nav .nav-links {
   display: flex;
-  align-items: left;
-  justify-content: flex-start;
-  margin-left: 2em;
-  white-space: nowrap;
+  gap: 20px; /* Space between navigation links */
 }
-.navbar_right {
+
+.side-nav .nav-links a {
+  text-decoration: none;
+  color: var(--beige1);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 10px; /* Add padding for better clickability */
+}
+
+.side-nav .logo img {
+  height: 40px;
+}
+
+
+.iconArea {
   display: flex;
-  align-items: right;
-  justify-content: flex-end;
-  margin-right: 2em;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
-.navbar_left a:hover {
-  color: #043132;
-  transition: 0.5s;
-}
-.logo {
+.icon img {
+  position: relative;
+  margin: 1em;
+  width: 2em;
   height: auto;
-  width: 50%;
+  width: 24px;
+  height: 24px;
+}
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-content .section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 li a {
   color: var(--beige1);
@@ -72,45 +105,10 @@ ul {
   justify-content: flex-end;
   list-style: none;
 }
-.navbar_left a:hover {
-  color: #279b59;
-  transition: 0.5s;
-}
-.wave {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
+
+
 h1 {
-  font-family: "Karla", sans-serif;
+  font-family: "MyFont", sans-serif;
   color: var(--beige1);
   font-weight: 500;
   font-style: normal;
@@ -124,7 +122,7 @@ h2 {
   color: var(--beige1);
   font-weight: 500;
   font-style: normal;
-  text-align: center;
+  text-align: left;
   font-size: 2em;
   margin-top: 2em;
 }
@@ -172,7 +170,7 @@ h2 {
   white-space: nowrap;
 }
 .view p {
-  font-family: "karla", sans-serif;
+  font-family: "MyFont", sans-serif;
   font-size: 0.8em;
   padding: 0.5em 1em;
   position: absolute;
@@ -191,19 +189,6 @@ footer {
   margin-top: 1em;
   margin-bottom: 2em;
   text-align: center;
-}
-.iconArea {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  transition: 1s ease-in-out;
-}
-.icon img {
-  position: relative;
-  margin: 1em;
-  transition: 0.3s ease-in;
-  width: 2em;
-  height: auto;
 }
 .copyright {
   font-size: 1em;
@@ -289,6 +274,16 @@ footer {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+
+  .side-nav .nav-links {
+    display: flex; /* Show nav-links */
+    gap: 20px; /* Space between links */
+  }
+
+  /* Hide the "PORTFOLIO" link */
+  .side-nav .nav-links a:first-child {
+    display: none;
+  }
 }
 @media (min-width: 600px) {
   body {
@@ -320,9 +315,7 @@ footer {
   h2 {
     font-size: 2.2em;
   }
-  .icon img {
-    width: 3em;
-  }
+ 
   .intro {
     display: flex;
     flex-direction: column;
@@ -351,7 +344,7 @@ footer {
   }
   .view p {
     font-size: 1.2em;
-    font-family: "karla", sans-serif;
+    font-family: "MyFont", sans-serif;
     padding: 0.5em 1em;
     position: absolute;
     top: 48%;
@@ -379,9 +372,7 @@ footer {
   p {
     font-size: 1.5em;
   }
-  .icon img {
-    width: 3em;
-  }
+ 
   .intro p {
     font-size: 2em;
   }
@@ -421,7 +412,7 @@ footer {
   }
 
   .view h5 {
-    color: #279b59;
+    color: var(--beige1);
     font-size: 2em;
     top: 30%;
     position: absolute;
@@ -459,9 +450,7 @@ footer {
   p {
     font-size: 1.5em;
   }
-  .icon img {
-    width: 3em;
-  }
+ 
 
   .intro p {
     color: var(--dark1);
@@ -507,7 +496,7 @@ footer {
   }
 
   .view h5 {
-    color: #279b59;
+    color: var(--beige1);
     font-size: 2em;
     top: 30%;
     position: absolute;
