@@ -330,6 +330,15 @@ footer {
     flex-direction: row;
     gap: 0.3rem;
   }
+
+    /* Adjust portfolio layout for text-image alternation */
+    .project:nth-child(odd) {
+    flex-direction: column-reverse; /* Swap order for odd projects */
+  }
+
+  .project:nth-child(even) {
+    flex-direction: column; /* Maintain normal order for even projects */
+  }
 }
 
 
