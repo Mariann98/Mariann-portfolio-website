@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NS Bike Locker Project - Mariann's Portfolio</title>
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
+    
+    <!-- Inline CSS styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+      /* General body styles */
+      body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #202020;
+        font-weight: 600;
+        transform: rotate(270deg); /* Rotates text 90 degrees */
+        transform-origin: center; /* Adjust rotation point */
+        display: inline-block; /* Ensures rotation applies correctly */
+        margin-bottom: 2rem; /* Adds space between links */
+        white-space: nowrap;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      .sidenav a:hover {
+        color: #567092;
+      }
+
+      .main {
+        margin-left: 10rem;
+        padding: 1.5rem;
+      }
+
+      .project-page {
+        margin: 3rem 10rem 0.1rem 10rem;
+        padding: 2rem;
+      }
+
+      .project-page h2 {
+        margin-bottom: 1rem;
+      }
+
+      .project-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .project-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .project-section p {
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      .iconArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .icon img {
+        position: relative;
+        margin: 1em;
+        width: 2em;
+        height: auto;
+      }
+
+      .project-section img {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    iframe {
+    display: block; /* Ensures the iframe is treated as a block-level element */
+    margin: 0 auto; /* Centers the iframe horizontally */
+    margin-top: 2rem; /* Optional: Adds some space above the iframe */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+h3 {
+    margin-bottom: -1rem;
+}
+     
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Adds spacing around the buttons */
+    gap: 1.5rem; /* Spacing between the buttons */
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #496EAF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #405a6b; /* Hover color for buttons */
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+    <a href="/index.html">Portfolio</a>
+    <a href="/index.html">About me</a>
+  </div>
+
+  <!-- Project Page: CrisisSuite -->
+  <div class="project-page">
+    <h2>Revamping the NS bike lockers</h2>
+   
+    <div class="project-section">
+        <p>NS, the Dutch railway company, approached my team of 3 for a solution to create better bicycle parking at smaller stations. They wanted an innovative, user-friendly design that solves space issues and safety concerns. This design needed to be easily installable at any small Dutch station, adaptable to various bike types, and provide guaranteed, secure parking. Our focus was on the entire user journey, including bike and train travel, and exploring additional NS services. Ultimately, our goal was an affordable, sustainable solution that ensures commuter satisfaction and bicycle safety.
+        </p>
+      </div>
+
+    <div class="project-section">
+      <h3>Problem</h3>
+      <p>People in the Netherlands have the option to subscribe to a locker service provided by NS, which allows them to store their bikes safely at train stations. Currently, the design challenge is centered around the redesign of the existing bicycle lockers at small train stations in the country. The primary objective is to address the problem of long waiting lists, which can stretch for months. By studying the travel patterns and preferences of users, we can develop effective and innovative solutions to tackle this issue and enhance the user experience. By prioritizing efficiency, security, and reliability for the user, we can elegantly solve this problem.
+      </p>
+      <img src="/public/pictures/Intro - NS.png" alt="NS Intro Image" />
+    </div>
+
+    <div class="project-section">
+      <h3>User goals</h3>
+      <ol>
+        <li>
+          <b>Convenient bike storage</b> <br />While commuting by train, cyclists require a
+          secure and convenient location to park their bikes. The revamped lockers and
+          enhanced bike parking options aim to fulfill this requirement by providing a
+          seamless and easily accessible area for storing bikes.
+        </li>
+        <li>
+          <b>Time efficiency</b> <br />Commuters require a hassle-free way to park their bikes
+          and hop onto the train quickly, without waiting for extended periods or walking long
+          distances to reach the platform. By upgrading the lockers and bike parking
+          facilities, NS aims to enhance this experience by making the process of storing
+          bikes and the flow of getting to the train more smooth and efficient.
+        </li>
+        <li>
+          <b>Cost-effectiveness</b><br />
+          Commuters are always looking for affordable transportation options. NS can attract
+          more cost-conscious commuters by providing bike parking facilities that are less
+          expensive than driving and parking a car at the train station.
+        </li>
+        <li>
+          <b>Comfort</b> <br />People who travel to work like to feel relaxed during their
+          journey. Making it easier for bike riders to access the locker, and get to the train
+          can make their trip more fun and relaxed. This may get more people to use the train
+          and increase the number of passengers.
+        </li>
+        <li>
+          <b>Safety and Security </b><br />People who travel to work on bikes should not have
+          to worry about the condition of their bikes and should feel relaxed. They must have
+          complete trust in the place 2 where they keep their bike. This also includes
+          minimizing the potential of loss or malfunctions in the system
+        </li>
+      </ol>
+      </div>
+
+    <div class="project-section">
+      <h3>Research aim</h3>
+      <p>The goal of our project is to better understand how people use the current bike lockers and other parking facilities for their bikes. We aim to see how bike commuters interact with these spaces so we can come up with design solutions that work best for them. By observing how users behave at the facilities and conducting other research methods, we can derive insights for potential solutions that meet the user's needs and render bike parking more UX-friendly.
+        <br><br>To tackle our research questions, we employed a range of methods, including desk research, observation, interviews, user journey mapping, collages, service blueprints, and competitor analysis.
+      </p>
+    </div> 
+
+    <div class="project-section">
+        <h3>Research insights</h3>
+        <p>
+            <b
+              >Insight 1: The rental process for lockers is lengthy and lacks locker availability
+              information.</b
+            ><br />
+            <i
+              >The current locker rental process lacks transparency and can be frustrating for
+              users due to a lengthy form, unclear locker availability, and uncertain
+              communication. NS should enhance this process for a better user experience.</i
+            ><br /><br />
+            <b
+              >Insight 2: Commuters are more likely to rent a locker for their bicycles due to
+              negative experiences with unguarded bike racks.</b
+            >
+            <br /><i
+              >During interviews with locker users, we found that many rented lockers due to past
+              bike theft or vandalism experiences, seeking security for their belongings.
+              Conversely, most non-locker users reported no such issues, even with expensive bikes
+              at stations. This suggests a "survivor bias" – locker users believe it's worth it
+              because they avoid theft, while non-locker users think the same for not renting.</i
+            ><br /><br />
+            <b
+              >Insight 3: The perceptions of convenience, efficiency, and safety associated with
+              parking options vary between users of lockers and bike racks.</b
+            >
+            <br /><i
+              >During interviews about parking safety and convenience, we observed a disconnect
+              between what people claimed and the observed reality. Both groups of commuters
+              believed their parking method was the quickest and safest, but it was surprising to
+              hear this from non-locker users, given instances of bikes being mishandled.
+              Efficiency opinions also varied, with locker users claiming it's faster and
+              non-locker users stating the opposite. This suggests speed isn't the primary factor
+              when considering locker rentals. </i
+            ><br /><br />
+            <b
+              >Insight 4: The lockers are being used inefficiently - there is no flexibility in
+              renting the locker.</b
+            >
+            <br /><i
+              >Through observations, we discovered that lockers are mainly used during work or
+              school hours, leaving them vacant on weekends and non-workdays. This leads to
+              waiting lists while rented lockers sit unused. Some lockers are used sparingly,
+              functioning more as storage units, accessed only weekly or monthly.</i
+            >
+            <br /><br />
+            <b
+              >Insight 5: During peak hours, the cluttered and visually unappealing bike parking
+              area leads travelers to leave their bikes outside the designated parking area.</b
+            >
+            <br /><i
+              >During the observation, we noticed the repeating pattern of random bike parking
+              around the dedicated area. Bikes are usually parked closer to the station during the
+              rush hours in the morning. Random bike parking is associated with a lack of
+              available racks closer to the station.
+            </i>
+          </p>
+          <img src="/public/pictures/Insight 1 - NS.jpg" alt="NS Insight Image"/>
+          <img src="/public/pictures/Insight 2 - NS.jpg" alt="NS Insight Image"/>
+        </div>
+        <div class="project-section">
+            <h3>How our approach differs from traditional lockers?</h3>
+            <p>What made our design truly unique was our commitment to fostering a sense of community and trust. We aspired to create a warm and inviting shared space that welcomed everyone, regardless of whether they possessed an OV chip card. Our inclusive approach allowed us to forge meaningful connections between users and NS while fostering a strong sense of camaraderie among the users themselves. By embracing this inclusive mindset, we were able to further amplify the confidence and trust that users had in NS, ensuring that every individual felt secure and supported within our parking facility.
+            <br><br>Integrating fun into our concepts was an exciting part of our design journey. When we presented our ideas to NS, they seemed genuinely enthusiastic about our more creative concepts. While practicality remained important, they encouraged us to maintain a sense of enjoyment and imagination in the final design. We understood the importance of striking the right balance, ensuring that the fun element was subtle, easily accessible, and brought immense joy to users. It didn't require a significant time commitment and was optional. This fun aspect aimed to provide users with a compelling reason to return regularly. Even if they had extra time before their train departure, they could engage with this delightful feature, adding a touch of joy to their day.</p>
+          </div> 
+
+          <div class="project-section">
+            <h3>Ideation</h3>
+            <p>After we completed the research phase, we started the ideation process. From our insights, we were able to come up with 21 How Might We questions by using the Brain Dump method. The questions were clustered into groups, and finished with dot voting to narrow down the most insightful questions for the next step. The final questions can be seen in the yellow circle.
+            </p>
+            <img src="/public/pictures/Ideation - NS.png" alt="NS Ideation Image" />
+
+          </div>  
+
+          <div class="project-section">
+            <h3>Concepts</h3>
+            <p>During our ideation session, we brainstormed a variety of creative ideas, narrowing them down to 20 concepts — 5 from each team member. From those, we selected 4 to present to the client, and ultimately created this one as the final direction.
+            </p>
+            <img src="/public/pictures/Concept - NS.png" alt="NS Concept Image" />
+
+          </div>  
+
+          <div class="project-section">
+            <h3>Iterations</h3>
+            <p>We completed a total of four iterations, starting with a 2D map of the environment. Next, we calculated the building measurements, including slope elevations, to ensure the journey would be easy for bike riders. Following that, we built a paper prototype of the entire building and its surroundings, which we then tested for usability.
+            </p>
+            <img src="/public/pictures/Iteration 1 - NS.png" alt="NS Iteration Image" />
+
+            <p>We then incorporated the feedback and continued refining the flow during the second and third iterations.
+            </p>
+            <img src="/public/pictures/Iteration 2 - NS.png" alt="NS Iteration Image" />
+
+            <p>The final iteration focused on the digital aspect of our design, specifically the new feature for the bike lockers.
+            </p>
+            <img src="/public/pictures/Iteration 3 - NS.jpg" alt="NS Iteration Image" />
+          </div> 
+
+          <div class="project-section">
+            <h3>Final design</h3>
+            <p>Here, you can view our final design in a 3D model, along with the new app features. For a complete experience of our design, check out the video below.
+            </p>
+            <img src="/public/pictures/Final sharedspace - NS.png" alt="NS Final Design Image" />
+            <img src="/public/pictures/Final app - NS.png" alt="NS Final Design Image" />
+            <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/n5XbbHbzzbk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          </div> 
+
+        <div class="navigation-buttons">
+          <a href="/src/VoNoMemo.html" class="nav-btn">Previous</a>
+          <a href="/src/AlarmIo.html" class="nav-btn">Next</a>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="iconArea">
+      <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+        <img src="/public/pictures/CV.svg" alt="CV icon" title="Download my CV"/>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+        <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Explore my LinkedIn"/>
+      </a>
+      <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+        <img src="/public/pictures/email.svg" alt="Email icon" title="Email me"/>
+      </a>
+    </div>
+    <p class="copyright">
+      Copyright © 2022 Mariann Alber. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>

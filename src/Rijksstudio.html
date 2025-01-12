@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rijksstudio Project - Mariann's Portfolio</title>
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
+    
+    <!-- Inline CSS styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+  
+}
+      /* General body styles */
+      body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #202020;
+        font-weight: 600;
+        transform: rotate(270deg); /* Rotates text 90 degrees */
+        transform-origin: center; /* Adjust rotation point */
+        display: inline-block; /* Ensures rotation applies correctly */
+        margin-bottom: 2rem; /* Adds space between links */
+        white-space: nowrap;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      .sidenav a:hover {
+        color: #567092;
+      }
+
+      .main {
+        margin-left: 10rem;
+        padding: 1.5rem;
+      }
+
+      .project-page {
+        margin: 3rem 10rem 0.1rem 10rem;
+        padding: 2rem;
+      }
+
+      .project-page h2 {
+        margin-bottom: 1rem;
+      }
+
+      .project-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .project-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .project-section p {
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      .iconArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .icon img {
+        position: relative;
+        margin: 1em;
+        width: 2em;
+        height: auto;
+      }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+         color: #496EAF;
+    }
+
+    h3 {
+        margin-bottom: -1rem;
+    }
+     
+    .project-section img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Adds spacing around the buttons */
+    gap: 1.5rem; /* Spacing between the buttons */
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #496EAF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #405a6b; /* Hover color for buttons */
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+    <a href="/index.html">Portfolio</a>
+    <a href="/index.html">About me</a>
+  </div>
+
+  <!-- Project Page: CrisisSuite -->
+  <div class="project-page">
+    <h2>Rijksstudio website analysis</h2>
+   
+    <div class="project-section">
+        <p>For our 'Research for Design' course project, my team of four conducted a thorough analysis of the Rijksstudio website. Our objective was to enhance the user experience through extensive research, including user trials. To achieve our research goals, we collaborated to identify the key usability challenges by conducting user trials and analyzing the resulting data.
+        </p>
+        <img src="/public/pictures/Intro - Rijks.png" alt="Rijksstudio Intro Image" />
+      </div>
+
+    <div class="project-section">
+      <h3>Problem: Reporting user's issues</h3>
+      <p>Visitors of the Rijksstudio website face usability problems that need to be investigated.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h3>Solution: Empirical research</h3>
+      <p>Evaluating the usability issues with the Rijksstudio website and presenting a proposed design solution.
+      </p>
+      </div>
+
+    <div class="project-section">
+      <h3>Orientation and research questions</h3>
+      <p>As a team, we commenced the user trial by thoroughly exploring the website's features. Afterward, we proceeded to create a comprehensive site map and formulated research questions to guide our evaluation.
+    </p>
+      <ol>
+        <li>
+          What do participants, who enjoy art, do when visiting the site: rijksstudio.nl?
+        </li>
+        <li>
+          What usability problems are users facing when using rijksstudio.nl? What causes
+          these problems?
+        </li>
+        <li>
+          In what way are users incentivized to interact with the content and functionality of
+          the studio website?
+        </li>
+        <li>How do users find information and art pieces on the studio website?</li>
+      </ol>
+      <img src="/public/pictures/Sitemap - Rijks.png" alt="Rijksstudio Sitemap Image" />
+    </div> 
+
+    <div class="project-section">
+        <h3>Research set-up</h3>
+        <p>During the trial, we utilized Zoom to record the user's actions, sounds, and facial expressions. Using Zoom proved to be the most efficient way to capture all three recordings simultaneously. We selected a user profile of "young (18-30 years old) art enthusiasts" who typically have a keen interest in classical art and visit museums at least twice a year. We chose this group as we believe that the Rijksmuseum targets them through their Studio webpage to inspire them with the available art, and being active online users, Gen-Z/Millennials are more likely to engage with online content.
+        <br><br>To gain insight into the user's behavior and preferences as art enthusiasts, each group member conducted an interview with one participant and performed user-trialing. This profile helped us to understand the user's engagement with the webpage, identify any problems they might face, and determine how they could plan their in-person visits to the museum.
+        </p>
+          <img src="/public/pictures/Setup - Rijks.jpg" alt="Rijksstudio Setup Image" />
+        </div>
+
+        <div class="project-section">
+            <h3>Data fieldwork</h3>
+            <p>After conducting the user trial, we individually transcribed the interview and video recordings. This allowed us to create flowcharts in XD that provided an overview of the user's actions and emotions during the session. We then applied the 'no creativity' method to identify any usability problems that the participants encountered.
+            </p>
+            <p><b>1. What do participants, who enjoy art, do when visiting the site: rijksstudio.nl?</b>
+            Our initial task for participants was to explore the website freely, which provided us with a comprehensive overview of their individual usage patterns. During this phase, participants navigated the website, visited the gift shop, clicked on “Watch our stories” and “What’s on”, explored exhibitions, and even watched videos.</p>
+            <img src="/public/pictures/Combined task 1 - Rijks.png" alt="Rijksstudio Data Image" />
+           
+            <p><b>2. What usability problems are users facing when using rijksstudio.nl? What causes these problems?            </b>
+                During the trialing, we observed several usability issues that users were facing. Specifically, users were having difficulty using certain functions, such as selecting a route option or adding artworks to a set. These functions were not clearly communicated to users, and the route option was inconsistently displayed among the artworks. This made it confusing for users who were trying to add items to a specific set, as they were unsure where to add them. Additionally, users struggled to find the correct search engine, which made it difficult for them to locate specific artworks in Task 4.
+            </p> <img src="/public/pictures/Usability problems - Rijks.png" alt="Rijksstudio Data Image" /><br>
+           <img src="/public/pictures/Combined task 3 - Rijks.png" alt="Rijksstudio Data Image" /><br>
+            <img src="/public/pictures/Combined task 5 - Rijks.png" alt="Rijksstudio Data Image" /><br>
+            <img src="/public/pictures/Combined task 7 - Rijks.png" alt="Rijksstudio Data Image" />
+            
+            <p><b>3. In what way are users incentivized to interact with the content and functionality of the studio website?            </b>
+                The website incentivizes visitors to engage with its content by allowing them to view, create, and share custom galleries of artworks curated by other users from a large catalog. By creating an account, visitors can add artworks to their personal gallery, view other users' galleries, or take online tours of galleries created by museum staff. Additionally, visitors can 'like' artworks, download them as PNG files, share them on social media, and cycle through galleries. The website also features engaging headers that encourage users to "Watch our stories" or "Shop the collection".</p>
+            <img src="/public/pictures/Combined task 4.1 - Rijks.png" alt="Rijksstudio Data Image" /><br>
+            <img src="/public/pictures/Combined task 6 - Rijks.png" alt="Rijksstudio Data Image" />
+           
+            <p><b>4. How do users find information and art pieces on the studio website?            </b>
+                When searching for information or art pieces, visitors to the Rijksmuseum often rely on the museum's primary search engine rather than the dedicated search function within Rijksstudio, leading to confusion and unnecessary information. This can make it difficult for users to locate specific artworks, as was the case during task 4, resulting in a longer search process. To streamline the search process and avoid confusion, visitors are encouraged to utilize the dedicated Rijksstudio search function when seeking out specific pieces of art. </p>
+                <img src="/public/pictures/Combined task 4.2 - Rijks.png" alt="Rijksstudio Data Image" /><br>
+                <img src="/public/pictures/Combined task 4.3 - Rijks.png" alt="Rijksstudio Data Image" />
+            </div> 
+
+          <div class="project-section">
+            <h3>Results and conclusion</h3>
+            <p>We suggest that the Studio website should have an independent menu and functions separate from the Rijksmuseum website to improve user experience. By implementing a new menu, users will have a better understanding of the key functions and be able to utilize the website to its fullest potential.
+            <br> <br>
+                Currently, most users rely on the main website's search engine to find functions or artworks. To simplify the process, we recommend having only one search option on the landing page that searches for artworks and functions specifically on the Studio website.
+            <br> <br>   
+                After creating their first set, users have difficulty locating it, as they struggle to navigate the website. To mitigate this, hints on where to find the artset or a button such as "look at my artset" after creation should be added.
+                <br> <br>        
+                Navigating back to the home page of the Studio website is time-consuming since users can only go back page by page. We recommend having a home button for the Studio website to make it easier for users to find their way.
+                <br> <br>       
+                The inconsistent design of links on the website leads to confusion for users when attempting to click on them. A uniform design across the website would create less confusion when searching for links.
+                <br> <br>      
+                The option to view available routes is difficult to find, as it only appears sporadically among artworks and sets. By highlighting this option at the top of the website, users will find it more easily and can plan their journey to the museum accordingly.
+                <br> <br>      
+                The refine menu offers numerous options, which can be overwhelming for users. It would be more efficient to select refinements before searching, as the page reloads after every refinement filter. Additionally, a "remove all" function would allow users to remove refinements quickly, rather than doing it one-by-one.</p>
+          </div>  
+        </div> 
+
+        <div class="navigation-buttons">
+          <a href="/src/GiftFromAfar.html" class="nav-btn">Previous</a>
+          <a href="/src/CrisisSuite.html" class="nav-btn">Next</a>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="iconArea">
+      <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+        <img src="/public/pictures/CV.svg" alt="CV icon" title="Download my CV"/>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+        <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Explore my LinkedIn"/>
+      </a>
+      <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+        <img src="/public/pictures/email.svg" alt="Email icon" title="Email me"/>
+      </a>
+    </div>
+    <p class="copyright">
+      Copyright © 2022 Mariann Alber. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>

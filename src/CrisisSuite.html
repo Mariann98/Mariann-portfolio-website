@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrisisSuite Project - Mariann's Portfolio</title>
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
+    
+    <!-- Inline CSS styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+      /* General body styles */
+      body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #202020;
+        font-weight: 600;
+        transform: rotate(270deg); /* Rotates text 90 degrees */
+        transform-origin: center; /* Adjust rotation point */
+        display: inline-block; /* Ensures rotation applies correctly */
+        margin-bottom: 2rem; /* Adds space between links */
+        white-space: nowrap;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      .sidenav a:hover {
+        color: #567092;
+      }
+
+      .main {
+        margin-left: 10rem;
+        padding: 1.5rem;
+      }
+
+      .project-page {
+        margin: 3rem 10rem 0.1rem 10rem;
+        padding: 2rem;
+      }
+
+      .project-page h2 {
+        margin-bottom: 1rem;
+      }
+
+      .project-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .project-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .project-section p {
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      .iconArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .icon img {
+        position: relative;
+        margin: 1em;
+        width: 2em;
+        height: auto;
+      }
+
+      .project-section img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+h3 {
+    margin-bottom: -1rem;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Adds spacing around the buttons */
+    gap: 1.5rem; /* Spacing between the buttons */
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #496EAF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #405a6b; /* Hover color for buttons */
+}
+      
+</style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+    <a href="/index.html">Portfolio</a>
+    <a href="/index.html">About me</a>
+  </div>
+
+  <!-- Project Page: CrisisSuite -->
+  <div class="project-page">
+    <h2>CrisisSuite</h2>
+   
+    <div class="project-section">
+        <p>
+            As part of the Research & Design course, I had the opportunity to work with Merlin
+            Software B.V, which provides practical software tools for crisis management. My task
+            was to improve the CrisisSuite software during the warm phase, and I focused on
+            enhancing the Logtool - the most critical tool used during a crisis. My goal was to
+            streamline the user experience and ensure that all necessary information could be
+            easily registered and accessed in a timely manner.
+          </p>
+      </div>
+
+    <div class="project-section">
+      <h3>Problem: Designing for usability in intense situations</h3>
+      <p>The challenge is to enhance the usability of a mobile application designed for crisis situations during their warm phase. These events are unpredictable and ideally rare, demanding a user-friendly design that caters to heightened emotions.</p>
+    </div>
+
+    <div class="project-section">
+      <h3>Empathizing</h3>
+      <p>During the Empathize phase, I conducted interviews, desk research, expert reviews, and competitor analyses to get to know my client and their product. This allowed me to identify pain points related to the Logtool feature of their app.</p>
+      <ol>
+        <li> In the Logtool there is no way to edit, delete, add attachments, or complete the action in the mobile version, as it is possible in the desktop version.</li>
+        <li> Everything should be consistent throughout the app, but in Logtool there has been made an exception with adding information. Instead of a “+” button, there is a text box.</li>
+        <li> In the Logtool the icons and their names (perception, assessment, action, decision) seem unclear. I would like to find out if the icons and descriptions are understandable for the user.</li></ol>
+      <img src="/public/pictures/Old Logtool-CrisisSuite.png" alt="CrisisSuite Empathizing Image" />
+    </div>
+
+    <div class="project-section">
+      <h3>Insights</h3>
+      <p>
+        After conducting a thorough analysis of the Logtool, I was able to gather three
+        high-level insights:
+      </p>
+      <ol>
+        <li>Consistency is key: It is important to provide users with the same functions in the
+          desktop and mobile versions to ensure consistency throughout the software.
+        </li>
+        <li>Quick recall of actions: The Logtool is missing an easy way for users to recall
+          previous actions, which can lead to frustration and loss of productivity.
+        </li>
+        <li>Familiarity matters: The current user flow of the Logtool is not familiar to users,
+          and their expectations of certain functions are not being met.
+        </li>
+      </ol>
+      <p>
+        Based on these insights, I was able to create two visual conclusions - an empathy map
+        and a storyboard. These tools helped me further understand user needs and develop
+        solutions to improve the Logtool's usability.
+      </p>
+      <img src="/public/pictures/Empathy map-CrisisSuite.png" alt="CrisisSuite Insights Image" />
+
+    <div class="project-section">
+      <h3>Design Vision</h3>
+      <p>
+        <b>Clear and intuitive Logtool</b><br />
+        The design direction for the CrisisSuite software is to redesign the Logtool to make
+        it more comprehensible for the users. It should make them feel like every action taken
+        comes naturally without the need to rethink their choices. For the user to have an
+        effortless and intuitive experience with the app, the focus needs to be on efficiency,
+        retainability, and flow. This means the product will be consistent and predictable.
+        <br />Additionally, according to the client's needs, the new design should make the
+        users feel like they are using an authentic and visually pleasing application that
+        fills their every need when it comes to logging information.
+      </p>      
+    </div>
+
+    <div class="project-section">
+      <h3>Ideating</h3>
+      <p>
+        To begin the ideation phase, I first identified the key pain points that emerged from
+        my research and formulated How Might We questions. Using the Mindmapping method, I
+        generated a multitude of ideas and potential solutions. Once I had diverged enough, I
+        began to visualize my ideas in Adobe XD. These initial sketches served as a guide
+        during the iterative process of testing my ideas with participants. I experimented
+        with different versions of user interfaces, focusing on how users might predict button
+        locations and anticipate actions.
+      </p>      
+      <img src="/public/pictures/Sketching prototype-CrisisSuite.png" alt="CrisisSuite Ideating Image" />
+    </div>
+
+    <div class="project-section">
+        <h3>Prototyping</h3>
+        <p>
+            To refine my concept, I conducted iterations with three participants and gathered valuable insights. This helped me create a final concept board and begin low-fidelity prototyping. After this, I tested them with additional participants and incorporated their feedback into my high-fidelity prototypes, which you can see here.
+          </p>        
+          <img src="/public/pictures/Hi-fi prototype-CrisisSuite.png" alt="CrisisSuite Prototyping Image" />
+      </div>
+      <div class="navigation-buttons">
+        <a href="/src/Rijksstudio.html" class="nav-btn">Previous</a>
+        <a href="/src/CoSMiC-EYE.html" class="nav-btn">Next</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="iconArea">
+      <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+        <img src="/public/pictures/CV.svg" alt="CV icon" title="Download my CV"/>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+        <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Explore my LinkedIn"/>
+      </a>
+      <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+        <img src="/public/pictures/email.svg" alt="Email icon" title="Email me"/>
+      </a>
+    </div>
+    <p class="copyright">
+      Copyright © 2022 Mariann Alber. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>

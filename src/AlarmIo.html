@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm.io Project - Mariann's Portfolio</title>
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
+    
+    <!-- Inline CSS styles -->
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+      /* General body styles */
+      body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #202020;
+        font-weight: 600;
+        transform: rotate(270deg); /* Rotates text 90 degrees */
+        transform-origin: center; /* Adjust rotation point */
+        display: inline-block; /* Ensures rotation applies correctly */
+        margin-bottom: 2rem; /* Adds space between links */
+        white-space: nowrap;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      .sidenav a:hover {
+        color: #567092;
+      }
+
+      .main {
+        margin-left: 10rem;
+        padding: 1.5rem;
+      }
+
+      .project-page {
+        margin: 3rem 10rem 0.1rem 10rem;
+        padding: 2rem;
+      }
+
+      .project-page h2 {
+        margin-bottom: 1rem;
+      }
+
+      .project-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .project-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .project-section p {
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      .iconArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .icon img {
+        position: relative;
+        margin: 1em;
+        width: 2em;
+        height: auto;
+      }
+
+      .project-section img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    iframe {
+    display: block; /* Ensures the iframe is treated as a block-level element */
+    margin: 0 auto; /* Centers the iframe horizontally */
+    margin-top: 2rem; /* Optional: Adds some space above the iframe */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+h3 {
+    margin-bottom: -1rem;
+}
+     
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Adds spacing around the buttons */
+    gap: 1.5rem; /* Spacing between the buttons */
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #496EAF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #405a6b; /* Hover color for buttons */
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.mySlides img {
+  width: 50%;
+}
+.numbertext {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "MyFont", sans-serif;
+  font-style: italic;
+  white-space: nowrap;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5em;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 10%;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+    <a href="/index.html">Portfolio</a>
+    <a href="/index.html">About me</a>
+  </div>
+
+  <!-- Project Page: CrisisSuite -->
+  <div class="project-page">
+    <h2>Alarm.io the Design for Emotion</h2>
+   
+    <div class="project-section">
+        <p>The project focused on the role of emotion in creating engaging user experiences. Through creative research and design explorations, my team of four developed a strategy for eliciting anxiety through design to ultimately benefit the user in the long term.
+            Our solution was the Alarmio app, designed to help people who struggle with discipline and waking up early. The app uses a punishment system to motivate users to wake up quickly and consistently. By eliciting anxiety, we create a sense of urgency that helps users build better habits over time.</p>
+      </div>
+
+    <div class="project-section">
+      <h3>Problem: Addressing the impact of emotions in design</h3>
+      <p>The task was to understand how feelings impact the user experience. By doing research and exploring design ideas, we wanted to figure out how emotions are important in making a meaningful connection between users and interactive products. After understanding this, our goal was to use what we learned to create a design that includes emotions in a practical and effective way to make the user experience better.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h3>Solution: Alarm.io</h3>
+      <p>The final solution, Alarm.io, is an alarm clock app employing emotional design to help users wake up on time. Users sign up, connect with Instagram, and select 5 photos for the app to modify. They also connect their electric toothbrush via Bluetooth. The app uses a triggering sound to prompt users to start brushing their teeth when the alarm goes off. Failure to comply results in a threat to post a modified photo on Instagram. The app utilizes gamification and social media pressure to motivate users to establish a consistent morning routine and form healthy habits.</p>
+      </div>
+
+    <div class="project-section">
+      <h3>Emotional Situation</h3>
+      <p>To determine our emotional situation, we began by brainstorming different experiences that have made us feel very emotional. After generating a list, we grouped together similar situations and removed those that were not relevant to everyone. We then used a dot voting technique to refine our selection, repeating the process twice to arrive at our final decision. Through this process of convergence, we arrived at "unexpected public performance" as our chosen emotional situation.
+      </p>
+      <img src="/public/pictures/Emotional situation - Alarmio.png" alt="Alarmio Situation Image"/>
+    </div> 
+
+    <div class="project-section">
+        <h3>Emotional explorations</h3>
+        <p>Our team embarked on an exploration of emotions, utilizing three unique methods: Mapping, Soundscape, and Box. Each of these explorations had a clear intention, which we followed through on by executing a detailed plan. Through this process, we were able to generate valuable findings and insights that allowed us to reflect on our emotional experiences. By carefully analyzing and synthesizing our results, we gained a deeper understanding of the complex ways in which emotions can impact our lives.
+        </p>
+        <p><b>The Mapping</b> began as an emotional exploration aimed at delving deeper into the experience of unexpected public speaking. We sought to gain a comprehensive understanding of the emotions that arise before, during, and after a performance. Through this process, we also aimed to familiarize ourselves with the concept of emotional granularity by closely analyzing our thoughts, feelings, actions, and bodily responses during each stage of the experience. I have visually represented my own experience in the graph below.
+        </p>
+        <img src="/public/pictures/Mapping - Alarmio.PNG" alt="Alarmio Mapping Image"/>
+
+        <p><b>The Soundscape</b> of our team’s analysis revealed the emotional mapping of unexpected public speaking and identified a specific area of interest: the 'during the performance' stage. We found significant differences in emotions during this phase and agreed that exploring the contrasts would be fascinating. Therefore, we will be focusing on this aspect of the soundscape for further investigation.</p>
+      <p>Our final emotional exploration, <b>the Box</b>, aimed to examine how individuals react in different surroundings. The experiment was conducted in two parts to showcase the impact that the environment can have on a person's state of mind. To facilitate this, we constructed an empty black box that elicited feelings of stage fright, despite there being no audience present. The first part of the experiment was designed to evoke feelings of exposure and anxiety, while the second part aimed to create a sense of confidence and preparedness. Through this exploration, we hope to shed light on the profound influence of surroundings on our emotions and behavior.</p>
+      <img src="/public/pictures/Box - Alarmio.jpg" alt="Alarmio Box Image"/>
+
+    </div> 
+
+        <div class="project-section">
+            <h3>Exploration Insights & Design Principles before</h3>
+            <p>
+                After conducting our explorations, we identified key insights and developed design
+                principles for our emotional installation.
+              </p>
+              <h4>Insights</h4>
+              <ol>
+                <li>
+                  Speaking on stage in front of an audience can cause physical reactions like
+                  trembling and sweating, which can lead to insecurity and loss of concentration.
+                </li>
+                <li>
+                  The size of the stage can affect anxiety levels, as empty space can make the speaker
+                  feel exposed and vulnerable.
+                </li>
+                <li>
+                  Positive feedback from the audience can help boost confidence and self-esteem.
+                </li>
+              </ol>
+              <h4>Principles</h4>
+              <ol>
+                <li>
+                  Discomfort is more likely to occur when the speaker is positioned in the center of a
+                  large, empty space.
+                </li>
+                <li>
+                  Anxiety can be increased by using minimal lighting and directing it solely at the
+                  user.
+                </li>
+                <li>
+                  Focusing on physical reactions (such as trembling, sweating) can intensify them.
+                </li>
+                <li>
+                  Positive feedback should be incorporated to make the experience feel more rewarding.
+                </li>
+                <li>
+                  Cheerful sounds can enhance self-confidence and create a sense of recognition.
+                </li>
+              </ol>    
+        </div> 
+
+          <div class="project-section">
+            <h3>Emotional Installation</h3>
+            <p>Our emotional installation aimed to observe how people would react to the same situation under different circumstances. Each visitor stood on a chair that resembled a stage, with headphones on, bright light shining towards them, and watched the same video projected on the wall. To add to the experience, their hands were sprayed with water to simulate sweat. The installation began and ended the same way, with a racing heart at the start and a round of applause at the end from an imaginary audience. However, half of the visitors listened to an upbeat song with enthusiastic cheers, while the other half continued to listen to a pulsing heartbeat paired with an anxious melody.
+            </p>
+            <img src="/public/pictures/Installation - Alarmio.png" alt="Alarmio Installation Image" />
+
+          </div>  
+
+          <div class="project-section">
+            <h3>Exploration Insights & Design Principles after</h3>
+            <p>After conducting our emotional installation, we identified key insights and created design principles to guide our iterations.
+            </p>
+            <h4>Insights</h4>
+            <ol>
+              <li>
+                Fear, horror, and depression can cause a subjective perception of time to lengthen,
+                while joy and carelessness have little effect on time perception.
+              </li>
+              <li>Sound can manipulate our focus and interpretation of visuals.</li>
+              <li>
+                Receiving praise after a poor performance can confuse and make individuals feel
+                undeserving of recognition.
+              </li>
+              <li>Listening to a positive soundscape can increase physical activity.</li>
+            </ol>
+            <h4>Principles</h4>
+            <ol>
+              <li>
+                Elevated surfaces, such as chairs, can trigger feelings of insecurity and stress.
+              </li>
+              <li>
+                Tense soundscapes can evoke feelings of insecurity and negatively influence
+                perception.
+              </li>
+              <li>Negative perceptions are more likely to arise from tense soundscapes.</li>
+              <li>
+                Dark and heavy musical accompaniment can influence the interpretation of events as
+                negative.
+              </li>
+              <li>Positive sounds can increase energy levels in the body.</li>
+            </ol>
+          </div>  
+
+          <div class="project-section">
+            <h3>Ideation</h3>
+            <p>In our ideation session, we posed the question, 'How can we use anxiety to trigger something good?' Each team member individually brain-dumped their thoughts on this topic, which we then voted on and offered suggestions for improvement. From there, we collaborated to cluster our favorite ideas and had a group discussion to explain our preferences and the reasons behind them. Mixing guilt and anxiety, we chose the idea that resonated most with the latter. To further develop the concept, we used HMW questions to clarify our objectives, and after three rounds of voting, we determined key features to implement in our iteration. It was a productive process that ultimately led us to a promising solution.
+            </p>
+            <img src="/public/pictures/Ideation 1 - Alarmio.jpg" alt="Alarmio Ideation Image" />
+            <img src="/public/pictures/Ideation 2 - Alarmio.jpg" alt="Alarmio Ideation Image" />
+
+
+          <div class="project-section">
+            <h3>Iteration 1 and 2</h3>
+            <h4>First iteration</h4>
+            <p>
+              During our iteration, we decided to test two punishment systems for the alarm clock:
+              charging money and auto-sending random photos from the user’s gallery to random
+              contacts when the user snoozes or ignores the alarm. Our goal is to learn what users
+              think and feel about these features, and determine which one causes more anxiety to
+              focus on in our design.
+            </p>
+            <h4>Execution</h4>
+            <p>
+              To execute this test, each team member implemented one of the two ideas on one or two
+              people. Our target group was individuals with discipline problems who struggle to wake
+              up in the morning, and who own an electric toothbrush.
+              <br />For the first idea, we called the user in the early morning and asked them to
+              take a picture of themselves brushing their teeth. If the user fails to send the
+              picture within 5 minutes, they will be charged 5 euros as punishment. After testing,
+              we interviewed the user to gather feedback on their experience. <br /><br />The second
+              idea involves threatening to upload a compromising picture of the user if they snooze
+              the alarm. Similar to the first idea, if the user does not send a picture within 5
+              minutes, we will post an embarrassing picture of them on Instagram. By conducting
+              these tests and gathering user feedback, we hoped to determine which punishment system
+              is more effective and refine our design accordingly.
+            </p>
+            <img src="/public/pictures/Iteration - Alarmio.jpg" alt="Alarmio Itearation Image" />
+            <h4>Second iteration</h4>
+            <p>
+              For our second iteration, we wanted to improve the photo punishment feature of
+              Alarm.io to make it less intimidating while still motivating users to wake up. After
+              brainstorming, we came up with a solution - photoshopped embarrassing pictures of the
+              user posted online if they snooze their alarm.
+            </p>
+            <h4>Execution</h4>
+            <p>
+              To test this idea, each of us tried out the new and improved Alarm.io with one person.
+              Before the testing, we gave them an overview of the application and how the modified
+              photo punishment will work. During the test, we called the user in the early morning
+              and threaten to upload an embarrassing picture of them on Instagram if they snooze
+              their alarm. We used a ticking sound and count down every minute to increase the
+              user's anxiety level. To ensure they wake up, we asked for a picture of them brushing
+              their teeth. If they fail to send the picture within 5 minutes, we will post a
+              photoshopped image of them on Instagram. After the test, we conducted an interview
+              with the user to gather feedback on their experience. This helped us determine if the
+              modified photo punishment feature is effective and how we can improve it further.
+            </p>
+          </div> 
+
+          <div class="project-section">
+            <h3>Final emotional design            </h3>
+            <p>   <p>
+                Our goal was to design an alarm clock app called Alarm.io that uses emotional design
+                to help users wake up on time. To use the app, users must sign up and connect with
+                Instagram, selecting 5 photos for the app to modify. They also need to connect their
+                electric toothbrush via Bluetooth. The app provides a thorough introduction during the
+                sign-up process. <br />
+                <br />
+                To wake up on time, users must set the alarm for their desired wake-up time. When the
+                alarm goes off, a triggering sound plays, and if the user doesn't start brushing their
+                teeth, the app threatens to post a modified photo of them on Instagram. The app
+                provides a preview of the possible photo, and a 5-minute countdown with ticking noises
+                starts. If the user starts brushing their teeth within that time, the app
+                congratulates them and records their success. <br />
+                <br />
+                If the user hits snooze, the app gives them one more chance to wake up and brush their
+                teeth, threatening to post a modified photo if they fail again. If the user doesn't
+                start brushing within a minute, the app posts the modified photo on their Instagram
+                account for 24 hours, accompanied by a descriptive text to amplify the anxiety. <br />
+                <br />
+                Overall, Alarmio uses emotional design to motivate users to wake up on time and form
+                healthy habits, using gamification and social media pressure to encourage success.
+              </p> </p>
+              <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext">Register</div>
+                  <img src="/public/pictures/Register.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">What is alarmio?</div>
+                  <img src="/public/pictures/Introduction 15.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">How it works?</div>
+                  <img src="/public/pictures/Introduction 14.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Are you awake?</div>
+                  <img src="/public/pictures/Introduction 13.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Want to snooze?</div>
+                  <img src="/public/pictures/Introduction 12.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Add photos</div>
+                  <img src="/public/pictures/Introduction 11.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Choose 5 photos</div>
+                  <img src="/public/pictures/Add photos.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Home - blank</div>
+                  <img src="/public/pictures/Home page blank state.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Home - alarms</div>
+                  <img src="/public/pictures/Home page.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Alarming in action</div>
+                  <img src="/public/pictures/Alarm ringing.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Last chance after snoozing</div>
+                  <img src="/public/pictures/Last chance after snoozing.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Brushing teeth timer</div>
+                  <img src="/public/pictures/Brush teeth timer.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Negative filter photo after snoozing</div>
+                  <img src="/public/pictures/Negative filter photo after snoozing.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Good job!</div>
+                  <img src="/public/pictures/Woken up 5.png" />
+                </div>
+      
+                <div class="mySlides">
+                  <div class="numbertext">Profile</div>
+                  <img src="/public/pictures/Profile.png" />
+                </div>
+      
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+      
+              <script>
+                let slideIndex = 1;
+      
+                function plusSlides(n) {
+                  showSlides((slideIndex += n));
+                }
+      
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+      
+                  if (n > slides.length) {
+                    slideIndex = 1;
+                  }
+                  if (n < 1) {
+                    slideIndex = slides.length;
+                  }
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+      
+                  slides[slideIndex - 1].style.display = "block";
+                }
+      
+                showSlides(slideIndex);
+              </script>
+          </div> 
+
+          <div class="project-section">
+            <h3>Video explaining Alarm.io            </h3>
+            <p>As part of the Design for Emotion course, my group created a 3-minute video explaining our project on Alarm.io. After all 19 videos were presented, everyone had the opportunity to vote in four categories: 'Best movie', 'Best acting', 'Best concept', and 'Overall best'. To our excitement, our video made history by winning in three out of the four categories! We're proud to share our award-winning movie with you, which you can watch here.
+            </p>
+            <img src="/public/pictures/Winners - Alarmio.jpg" alt="Alarmio Winner Image" />
+            <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pxph6FL6xXI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          </div> 
+
+        <div class="navigation-buttons">
+          <a href="/src/NSBikeLocker.html" class="nav-btn">Previous</a>
+          <a href="/src/GiftFromAfar.html" class="nav-btn">Next</a>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="iconArea">
+      <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+        <img src="/public/pictures/CV.svg" alt="CV icon" title="Download my CV"/>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+        <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Explore my LinkedIn"/>
+      </a>
+      <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+        <img src="/public/pictures/email.svg" alt="Email icon" title="Email me"/>
+      </a>
+    </div>
+    <p class="copyright">
+      Copyright © 2022 Mariann Alber. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>

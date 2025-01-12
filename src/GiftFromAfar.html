@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift From Afar Project - Mariann's Portfolio</title>
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
+    
+    <!-- Inline CSS styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+      /* General body styles */
+      body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #202020;
+        font-weight: 600;
+        transform: rotate(270deg); /* Rotates text 90 degrees */
+        transform-origin: center; /* Adjust rotation point */
+        display: inline-block; /* Ensures rotation applies correctly */
+        margin-bottom: 2rem; /* Adds space between links */
+        white-space: nowrap;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      .sidenav a:hover {
+        color: #567092;
+      }
+
+      .main {
+        margin-left: 10rem;
+        padding: 1.5rem;
+      }
+
+      .project-page {
+        margin: 3rem 10rem 0.1rem 10rem;
+        padding: 2rem;
+      }
+
+      .project-page h2 {
+        margin-bottom: 1rem;
+      }
+
+      .project-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .project-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .project-section p {
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      .iconArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .icon img {
+        position: relative;
+        margin: 1em;
+        width: 2em;
+        height: auto;
+      }
+
+      .project-section img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    iframe {
+    display: block; /* Ensures the iframe is treated as a block-level element */
+    margin: 0 auto; /* Centers the iframe horizontally */
+    margin-top: 2rem; /* Optional: Adds some space above the iframe */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+h3 {
+    margin-bottom: -1rem;
+}
+     
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Adds spacing around the buttons */
+    gap: 1.5rem; /* Spacing between the buttons */
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #496EAF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #405a6b; /* Hover color for buttons */
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+    <a href="/index.html">Portfolio</a>
+    <a href="/index.html">About me</a>
+  </div>
+
+  <!-- Project Page: CrisisSuite -->
+  <div class="project-page">
+    <h2>Gift from afar</h2>
+   
+    <div class="project-section">
+        <p>One of my recent projects for the Bespoke Design course at the university is called "Gift from Afar". The aim of this project was to design a digital platform that enables people who are living far away from their loved ones to send personalized gifts that reflect the personality, interests, and needs of the recipient. The project was completed in teams of two.
+        </p>
+      </div>
+
+    <div class="project-section">
+      <h3>Problem</h3>
+      <p>Receiving personalized gifts from friends and family is not possible for students studying abroad.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h3>Solution</h3>
+     <p>A digital gift-giving experience combining the user's passion for food and adrenaline. By providing a personalized and exciting gift-giving experience, we hope to bridge the distance between people and bring them closer together.
+     </p>
+      </div>
+
+    <div class="project-section">
+      <h3>Research</h3>
+      <p>In the initial weeks of my project, I had the opportunity to meet with my user and develop research questions, set-up, and techniques. Through a semi-structured interview, shadowing, and asking my user to create a collage representing her, I was able to collect valuable information. Using Miro, I organized the data into clusters, which helped me to gain important insights into my user's preferences, behaviors, and needs. This allowed me to create a detailed user portrait that will guide the development of my project. Overall, the research phase was a crucial step in understanding my user and creating a solution that addresses their needs.
+      </p>
+      <img src="/public/pictures/Clusters - Gift.PNG" alt="Gift Insight Image"/>
+      <img src="/public/pictures/Insights - Gift.PNG" alt="Gift Insight Image"/>
+      <img src="/public/pictures/Persona - Gift.png" alt="Gift Insight Image"/>
+
+    </div> 
+
+    <div class="project-section">
+        <h3>Surprise for the User</h3>
+        <p>On Dutch traditional Sinterklass day, I had the opportunity to create a special surprise for one of my users. In keeping with the holiday tradition, I needed to come up with a creative and humorous way to present the gift, along with a poem that reflected the user's personality. After doing some research, I discovered that the user has a passion for photography and a love of food, particularly Nutella. Armed with this knowledge, I was able to craft a personalized present that incorporated these characteristics. It was a fun and rewarding project, and I enjoyed the chance to connect with my user in a unique way.
+          </p>
+          <img src="/public/pictures/Suprise - Gift.png" alt="Gift Suprise Image"/>
+        </div>
+
+        <div class="project-section">
+            <h3>Design Vision            </h3>
+            <p>Design direction: <b>A meaningful real-life imitation of gift-giving</b><br>
+                Our goal is to create an experience that replicates the emotions felt when giving and receiving gifts in person, even when users are separated by distance. We want our users to feel the same sense of joy and connection they would with their loved ones. Our aim is to provide a moment of surprise and delight when the user receives a gift, reminding them of the warmth and recognition that comes from being thought of by others. We understand the value of keeping meaningful gifts close, so we'll explore innovative ways to preserve these treasures virtually, whether in a digital keepsake box or on a personalized virtual wall.</p></div> 
+
+          <div class="project-section">
+            <h3>Ideation</h3>
+            <p>Prior to ideation, my partner and I collaborated on creating a user persona that would guide us throughout the design process. We generated several How Might We questions and utilized creative techniques such as the worst idea, brainwriting, and dot voting to conduct testing. From there, we brainstormed 40 ideas and narrowed them down to 20 ideas to sketch. Following that, we created paper prototypes and developed three draft concepts each.
+            </p>
+            <img src="/public/pictures/User Portrait - Gift.png" alt="Gift Ideation Image" />
+            <img src="/public/pictures/Ideation - Gift.png" alt="Gift Ideation Image" />
+
+          </div>  
+
+          <div class="project-section">
+            <h3>Storyboard and video explanation            </h3>
+            <p>After coming up with some initial ideas, I decided to create a storyboard to help us visualize and explore the user experience of our gift-giving app. By mapping out the different steps and interactions involved in the app, we were able to refine our design and make sure it would be intuitive and user-friendly. If you're interested in seeing more, We've also created a video explanation that provides a deeper look into the final design. This video will give you a better understanding of the app's features and functionality, and how it can enhance the gift-giving experience for users. Please feel free to take a look and let me know your thoughts!
+            </p>
+            <img src="/public/pictures/Storyboard - Gift.png" alt="Gift Storyboard Image" />
+            <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Gte4ygklupk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          </div>  
+
+          <div class="project-section">
+            <h3>Final design</h3>
+            <img src="/public/pictures/Final design 1 - Gift.png" alt="Gift Final Design Image" />
+            <img src="/public/pictures/Final design 2 - Gift.png" alt="Gift Final Design Image" />
+            <img src="/public/pictures/Final design 3 - Gift.png" alt="Gift Final Design Image" />
+          </div> 
+          </div> 
+
+        <div class="navigation-buttons">
+          <a href="/src/AlarmIo.html" class="nav-btn">Previous</a>
+          <a href="/src/Rijksstudio.html" class="nav-btn">Next</a>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="iconArea">
+      <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+        <img src="/public/pictures/CV.svg" alt="CV icon" title="Download my CV"/>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+        <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Explore my LinkedIn"/>
+      </a>
+      <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+        <img src="/public/pictures/email.svg" alt="Email icon" title="Email me"/>
+      </a>
+    </div>
+    <p class="copyright">
+      Copyright © 2022 Mariann Alber. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>

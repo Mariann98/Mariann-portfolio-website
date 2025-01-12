@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoSMiC-EYE Project - Mariann's Portfolio</title>
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
+    
+    <!-- Inline CSS styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+      /* General body styles */
+      body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #202020;
+        font-weight: 600;
+        transform: rotate(270deg); /* Rotates text 90 degrees */
+        transform-origin: center; /* Adjust rotation point */
+        display: inline-block; /* Ensures rotation applies correctly */
+        margin-bottom: 2rem; /* Adds space between links */
+        white-space: nowrap;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      .sidenav a:hover {
+        color: #567092;
+      }
+
+      .main {
+        margin-left: 10rem;
+        padding: 1.5rem;
+      }
+
+      .project-page {
+        margin: 3rem 10rem 0.1rem 10rem;
+        padding: 2rem;
+      }
+
+      .project-page h2 {
+        margin-bottom: 1rem;
+      }
+
+      .project-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .project-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .project-section p {
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      .iconArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .icon img {
+        position: relative;
+        margin: 1em;
+        width: 2em;
+        height: auto;
+      }
+
+      .project-section img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+h3 {
+    margin-bottom: -1rem;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Adds spacing around the buttons */
+    gap: 1.5rem; /* Spacing between the buttons */
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #496EAF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #405a6b; /* Hover color for buttons */
+}
+      
+    </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+    <a href="/index.html">Portfolio</a>
+    <a href="/index.html">About me</a>
+  </div>
+
+  <!-- Project Page: CrisisSuite -->
+  <div class="project-page">
+    <h2>CoSMiC-EYE</h2>
+   
+    <div class="project-section">
+        <p>During my internship, my primary focus was redesigning the CoSMiC-EYE application, a satellite-based tool for monitoring critical infrastructure near pipelines. Users, including data analysts and clients, use this application to compare satellite images and detect changes near pipelines. As a UX/UI designer, I conducted extensive research, created high-fidelity prototypes, and followed a five-phase design process: Empathize, Define, Ideate, Prototype, and Test. This involved understanding user needs, adding features, removing unnecessary elements, and crafting a new interface to improve usability and functionality.          </p>
+      </div>
+
+    <div class="project-section">
+      <h3>Empathizing</h3>
+      <p>
+        My research aimed to understand our customers' needs and enhance CoSMiC-EYE for a
+        smoother user experience. I started by delving into CoSMiC-EYE's strengths and
+        weaknesses through desk research and expert reviews. This helped me understand our
+        company's history and software concerns. I then had in-depth interviews with
+        colleagues and long-time customers to uncover ways to improve the app. I even hit the
+        field, spending eight hours classifying 48 third-party interferences in the
+        Netherlands. This hands-on experience gave me insights into user challenges.
+        <br />
+        <i
+          >To sum it up, here were the key pain points I found in the first phase of the
+          project:</i>
+      </p>
+      <ol>
+        <li>The app often bombards users with unnecessary information.</li>
+        <li>User locations and actions lack clear indications.</li>
+        <li>Call-to-action buttons leave users pondering, seeking clarity.</li>
+        <li>Notes and attachments demand richer timestamps, location data, and user insights.</li>
+        <li>The process of adding a Monitored Event requires a user-friendly overhaul.</li>
+        <li>Optical checking necessitates a simplified interface.</li>
+        <li>Definitions must resonate with users through familiar language.</li>
+        <li>The login process should be streamlined, eliminating unnecessary information.</li>
+        <li>Pins must undergo a transformation for better threat level differentiation.</li>
+        <li>The interface should evolve to be visually captivating, enhancing the overall user experience.</li>
+      </ol>
+      <img src="/public/pictures/Emphatizing-Cosmic Eye.png" alt="CoSMiC-EYE Empathizing Image" />
+    </div>
+
+    <div class="project-section">
+      <h3>Analysing</h3>
+      <p>
+        In the analysis phase, I examined research findings and observations through methods
+        like User stories, Persona, Sitemap, and Workflow. User stories highlighted pain
+        points and suggested solutions, defining personas' motivations and goals. During the
+        "Define" phase, I streamlined workflows to match user needs, optimizing pages and
+        features. I created a sitemap and a feature list for the new app, ensuring organized
+        progress.
+        <br />
+        <i>Key changes included:</i>
+      </p>
+      <ol>
+        <li>Introducing new icons and pins for improved user clarity.</li>
+        <li>Separating the filter and search bar to enhance usability.</li>
+        <li>Creating distinct pages for account details and login, offering more functionality.</li>
+        <li>Adapting new features based on user needs, including a downloadable list view and reporting missed events.</li>
+        <li>Enhancing the optical checking page for a more intuitive experience.</li>
+        <li>Enabling users to swiftly capture multiple photos while viewing relevant information.</li>
+        <li>Crafting a streamlined interface for note-taking that automatically included essential details.</li>
+      </ol>
+      <img src="/public/pictures/Analysing-Cosmic Eye.png" alt="CoSMiC-EYE Analysing Image" />
+      </div>
+
+    <div class="project-section">
+      <h3>Prototyping</h3>
+      <p>
+        In the prototyping phase, I started visualizing my ideas by creating low-fidelity
+        prototypes for the tablet version since it is the most used, and the space is limited.
+        This was followed by testing and according to the results, I started creating
+        high-fidelity prototypes. The processes went as follows: Low-fidelity -> Testing ->
+        Improving -> High-fidelity -> Testing -> Improving, etc. A comparison of the old and
+        new versions of the CoSMiC-EYE application with an explanation of the functionality
+        can be found below. I will present a couple pages that underwent the most significant
+        changes and describe what I improved and why.
+      </p>
+      <p>
+        <b>The Listview</b> is a new feature that the customers requested. The user can see
+        all the reports according to the chosen date range and filters. They can sort, expand,
+        and download the list. Listview helps the users have a clear and quick overview of the
+        possible TPIs and assign them to the field operators. Some of the customers used to
+        make a list of the TPIs themselves which now is not necessary anymore, saving them a
+        lot of time. A new feature called ‘select area’ has also been adapted, which allows
+        the user to select their desired area and show the reports of that zone only.
+      </p>
+      <img src="/public/pictures/List view-Cosmic Eye.png" alt="CrisisSuite Empathy Image" />
+      
+      <br><br><p>
+        <b>The Optical page</b> is one of the most important features for our customers. They
+        can compare images of different dates to notice changes in the location and predict
+        possible interferences. By dragging either the purple or green handle, they can change
+        the dates, upper or lower the brightness, and use the slider between two images for
+        comparison. Previously, the report page had an upper navigation bar, and even though it
+        was deactivated, it still confused the users. The date range selection did not make the
+        users recall immediately which handle responses to which photo and the dates in the
+        corners were not very visible. Now the hierarchy of the tabs has been changed, the date
+        range is below the images, the user can see how many photos are available, the colors of
+        the dates correlate with the handles, and the users can expand and collapse the dates to
+        gain more image space.
+      </p>
+      <img src="/public/pictures/TPI optical-Cosmic Eye.png" alt="CoSMiC-EYE Prototyping Image" />
+    </div>
+
+    <div class="project-section">
+      <h3>Testing</h3>
+      <p>
+        One of my favorite phases in the design process was testing. I will present a few of
+        the more interesting findings of an important feature in the app - date range. The
+        user is prompted to enter a date range as soon as they enter the web app to display
+        TPIs based on a chosen date range. Firstly, due to the user's request for a list view,
+        we tried to combine it with the date range, but after testing, the list view emerged
+        as its own feature. Then after testing, we decided to cut out all but the most
+        essential functions from the sidebar and move the calendar above the map to indicate
+        that they belong together. Initially, the calendar was collapsed and the user had to
+        tap on the start date to choose, but we ended up eliminating this unnecessary step and
+        now the calendar opens automatically. The issue of adding 'save' and 'cancel' buttons
+        to the previous workflow was also discussed, but testing revealed that the current
+        flow is intuitive enough without them. Last but not least, the testing divulged that
+        start and end dates must be distinguished by distinctive colors that are also
+        consistent with optical images.
+      </p>     
+      <img src="/public/pictures/Testing-Cosmic Eye.png" alt="CoSMiC-EYE Testing Image" />
+    </div>
+
+    <div class="project-section">
+        <h3>&#11088; 2nd-year 1st-semester highlights</h3>
+        <p>
+            My 2nd-year 1st semester had some cool moments. First off, I started an internship at Orbital Eye. It was awesome to work with a fantastic team on a challenging project
+            that pushed me out of my comfort zone. I got to learn a bunch of new stuff I'd never learned before. + I saw so many baby goats. &#128584 We also had this company trip to Lille, and it was a blast. We explored the city, played card games, did a murder mystery thing, and the best part?
+            Indoor skydiving – and yes, I rocked a Spiderman costume while doing it. That was the cherry on top. 
+            <br />Then there was that classic Dutch experience when I lost my bike at Delft station. Spent a good hour trying to track it down. Taught me to always take a photo of my parking slot. &#128516 On top of all that, I improved my 3D animation skills and created some cool 3D paintings. Oh, and I can't forget that I snagged my
+            first-year propaedeutic diploma with distinction.
+          </p>       
+          <img src="/public/pictures/Highlights-Cosmic Eye.png" alt="CoSMiC-EYE Highlights Image" />
+      </div>
+      <div class="navigation-buttons">
+        <a href="/src/CrisisSuite.html" class="nav-btn">Previous</a>
+        <a href="/src/Eurail.html" class="nav-btn">Next</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="iconArea">
+      <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+        <img src="/public/pictures/CV.svg" alt="CV icon" title="Download my CV"/>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+        <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Explore my LinkedIn"/>
+      </a>
+      <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+        <img src="/public/pictures/email.svg" alt="Email icon" title="Email me"/>
+      </a>
+    </div>
+    <p class="copyright">
+      Copyright © 2022 Mariann Alber. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>

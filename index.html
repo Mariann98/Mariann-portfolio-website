@@ -1,186 +1,356 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mariann's portfolio</title>
-    <link rel="shortcut icon" href="public/pictures/MA.png" />
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
     <link href="src/styles/index_styles.css" rel="stylesheet" />
-  </head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
-  <body>
-    <div class="d-flex flex-column justify-content-center w-100 h-100">
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <h1 class="fw-light text-white m-0"></h1>
-        <div class="btn-group my-5">
-          <a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip" class="btn btn-outline-light" aria-current="page"><i class="fas fa-file-download me-2"></i></a>
-          <a href="https://codepen.io/P1N2O/full/pyBNzX" class="btn btn-outline-light"> <i class="fas fa-expand ms-2"></i></a>
-        </div>
-        <a href="https://manuel.pinto.dev" class="text-decoration-none">
-          <h5 class="fw-light text-white m-0"></h5>
-        </a>
-      </div>
-    </div>
-    <div class="side-nav">
-      <div class="logo">
-       <a href="/index.html"> <img class="logo" src="/public/pictures/logo2.png" alt="logo" /></a>
-      </div>
-      <div class="nav-links">
-          <a href="/index.html">PORTFOLIO</a>
-          <a href="/aboutme.html">ABOUT ME</a>
-      </div>
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidenav {
+  height: 100%;
+  width: 5rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-evenly; /* Space out items evenly */
+}
+
+.sidenav a {
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #202020;
+  font-weight: 600;
+  transform: rotate(270deg); /* Rotates text 90 degrees */
+  transform-origin: center; /* Adjust rotation point */
+  display: inline-block; /* Ensures rotation applies correctly */
+  margin-bottom: 2rem; /* Adds space between links */
+  white-space: nowrap;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.sidenav a:hover {
+  color: #496EAF;
+}
+
+.main {
+  margin: 3rem 10rem 10rem 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+}
+
+.text-container {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.image-container {
+  flex-shrink: 0;
+}
+
+.photo {
+  width: 20rem;
+  height: auto;
+}
+
+.portfolio {
+  margin: 3rem 10rem 10rem 10rem;
+  padding: 3rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project:nth-child(even) .project-text {
+  order: 2;
+}
+
+.project:nth-child(even) .project-image {
+  order: 1;
+}
+
+.project-btn {
+  background-color: #496EAF;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #405a6b;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+
+.about-me {
+  margin: 3rem 10rem 10rem 10rem;
+  padding: 3rem;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.iconArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.icon img {
+  position: relative;
+  margin: 1em;
+  width: 2em;
+  height: auto;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.icon img:hover {
+  filter: grayscale(0%) brightness(100%);
+  transform: scale(1.2);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#about-me">About me</a>
+</div>
+
+<div class="main">
+  <div class="text-container">
+    <h1>Hi, I am Mariann<span class="wave">👋</span><br>UX Designer</h1>
+    <p>
+      I believe that great design starts with understanding people. With a background in creating intuitive, user-centered experiences, I specialize in blending creativity with functionality to solve real-world problems. Whether it's wireframing, prototyping, or user research, I’m always focused on making every interaction as seamless and meaningful as possible.
+      <br> Let's create something exceptional together!
+    </p>
   </div>
-    <div class="intro" id="home">
-      <h2>Hi, I am Mariann<span class="wave">👋</span><br>UX Designer</h2>
-      
-      <p><i>From Baltic whispers to Dutch delight, crafting experiences that feel just right.
-</i>      </p>
+  <div class="image-container">
+    <img src="/public/pictures/photo-me.png" alt="Mariann's photo" class="photo" />
+  </div>
+</div>
+
+<div id="portfolio" class="portfolio">
+  <h2>Portfolio</h2>
+
+  <div class="project-container">
+    <div class="project">
+      <div class="project-text">
+        <h3>CrisisSuite for Merlin Software</h3>
+        <p><i>User Experience/Interface Design</i></p>
+        <p>As part of the Research & Design course, I had the opportunity to work with Merlin Software B.V, which provides practical software tools for crisis management. My task was to improve the CrisisSuite software during the warm phase, and I focused on enhancing the Logtool - the most critical tool used during a crisis. My goal was to streamline the user experience and ensure that all necessary information could be easily registered and accessed in a timely manner.
+        </p>
+        <a href="src/crisissuite.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>      
     </div>
-    <main>
-
-    <div class="portfolio" id="portfolio">
-        <h2>PORTFOLIO</h2>
-
-        <div class="portfolio_wrapper">
-          <div class="portfolio_wrapper_left">
-            <a href="/src/pages/CrisisSuite.html">
-              <img class="portfolio_image" src="public/pictures/a.crisissuite.png" alt="interactiond" >
-             </a>
-             <div class="view">
-               <a href="/src/pages/CrisisSuite.html"><h5>CrisisSuite</h5></a>
-               <p>Research & Design</p>
-             </div>
-           </div>
-
-           <div class="portfolio_wrapper_middle">
-            <a href="/src/pages/cosmiceye.html">
-              <img class="portfolio_image" src="public/pictures/a.cosmic.png" alt="cosmiceye" >
-            </a>
-            <div class="view">
-              <a href="/src/pages/cosmiceye.html"><h5>CoSMiC-EYE</h5></a>
-              <p>Internship project</p>
-            </div>
-          </div>
-
-          <div class="portfolio_wrapper_right">
-            <a href="/src/pages/eurail.html">
-            <img class="portfolio_image" src="public/pictures/Eurail.png" alt="eurail">
-            </a>
-            <div class="view">
-              <a href="/src/pages/eurail.html"><h5>Eurail redesign</h5></a>
-              <p>Hobby project</p>
-            </div>
-          </div>
-        </div>
-      
-      <div class="portfolio_wrapper">
-
-        <div class="portfolio_wrapper_left">
-          <a href="/src/pages/VoNo.html">
-            <img class="portfolio_image" src="public/pictures/a.vono.png" alt="VoNo" >
-          </a>
-          <div class="view">
-            <a href="/src/pages/VoNo.html"><h5>VoNo memo note</h5></a>
-            <p>Redesign</p>
-          </div>
-        </div>
-
-        <div class="portfolio_wrapper_middle">
-          <a href="/src/pages/designforemotion.html">
-            <img class="portfolio_image" src="public/pictures/a.alarmio.png" alt="designforemotion">
-            </a>
-            <div class="view">
-              <a href="/src/pages/designforemotion.html"><h5>Alarm.io</h5></a>
-              <p>Design for Emotion</p>
-            </div>
-          </div>
-        <div class="portfolio_wrapper_right">
-          <a href="/src/pages/giftfromafar.html">
-           <img class="portfolio_image" src="public/pictures/a.giftfromafar.png" alt="giftfromafar">
-            </a>
-          <div class="view">
-            <a href="/src/pages/giftfromafar.html"><h5>Gift from afar</h5></a>
-            <p>Bespoke Design</p>
-          </div>
-        </div>
-      
+      <div class="project-image">
+        <img src="/public/pictures/project1.svg" alt="Project 1" />
       </div>
+    </div>
 
-      <div class="portfolio_wrapper">
-        <div class="portfolio_wrapper_left">
-          <a href="/src/pages/rijksstudio1.html">
-            <img class="portfolio_image" src="public/pictures/a.rijks.png" alt="rijksstudio">
-          </a>
-          <div class="view">
-            <a href="/src/pages/rijksstudio1.html"><h5>Rijksstudio</h5></a>
-            <p>Research for Design</p>
-          </div>
-        </div>
-
-           <div class="portfolio_wrapper_middle">
-          <a href="/src/pages/interactiondesign.html">
-            <img class="portfolio_image" src="public/pictures/a.bioi.png" alt="empty" >
-          </a>
-        <div class="view">
-          <a href="/src/pages/interactiondesign.html"><h5>Cinema wireframes</h5></a>
-          <p>Interaction Design</p>
-        </div>
-        </div>
-
-         <div class="portfolio_wrapper_right">
-            <img class="portfolio_image" src="public/pictures/a.prsharedspaces.png" alt="rijksstudio">
-          <div class="view">
-            <a href="/src/pages/sharedspaces.html"><h5>Project Shared Spaces</h5></a>
-            <p>NS locker redesign</p>
-          </div>
-        </div>
+    <div class="project">
+      <div class="project-text">
+        <h3>CoSMiC-EYE</h3>
+        <p><i>User Experience/Interface Design</i></p>
+        <p>During my internship, my primary focus was redesigning the CoSMiC-EYE application, a satellite-based tool for monitoring critical infrastructure near pipelines. Users, including data analysts and clients, use this application to compare satellite images and detect changes near pipelines. As a UX/UI designer, I conducted extensive research, created high-fidelity prototypes, and followed a five-phase design process: Empathize, Define, Ideate, Prototype, and Test. This involved understanding user needs, adding features, removing unnecessary elements, and crafting a new interface to improve usability and functionality.        </p>
+        <a href="src/CoSMiC-EYE.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>         </div>
+      <div class="project-image">
+        <img src="/public/pictures/project2.svg" alt="Project 2" />
       </div>
+    </div>
 
-         <div class="portfolio_wrapper">
-           <div class="portfolio_wrapper_left">
-        <a href="/src/pages/godutch.html">
-          <img class="portfolio_image" src="public/pictures/a.GoDucth.png" alt="interactiond">
-          </a>
-          <div class="view">
-            <a href="/src/pages/godutch.html"><h5>GoDutch redesign</h5></a>
-            <p>Interaction Design</p>
-          </div>
-        </div>
-        <div class="portfolio_wrapper_middle">
-            <img class="portfolio_image" src="public/pictures/a.hcihuman.png" alt="VoNo" >
-          <div class="view">
-            <h5>Coming soon</h5>
-            <p>Enchanted forest</p> <!--Interactive installation -->
-          </div>
-          
-        </div>
-        <div class="portfolio_wrapper_right">
-            <img class="portfolio_image" src="public/pictures/a.smart.png" alt="VoNo" >
-          
+    <div class="project">
+      <div class="project-text">
+        <h3>Eurail accessibility redesign</h3>
+        <p><i>Accessibility Improvement</i></p>
+        <p>While planning my trip to the Christmas markets in Germany, I encountered a few usability and accessibility issues on the Eurail website. I decided to conduct an initial expert review and an accessibility audit to identify the most basic problems. My focus was on fixing the fundamental design elements and ensuring the website met WCAG AA accessibility standards. This was a hobby project where I primarily aimed to improve the overall user experience without going into deeper levels of redesign. The two pages I worked on were the "Seat reservation" and "Train schedule" pages.
+        </p>
+        <a href="src/Eurail.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>         </div>
+      <div class="project-image">
+        <img src="/public/pictures/project3.svg" alt="Project 3" />
+      </div>
+    </div>
 
-          <div class="view">
-            <h5>Coming soon</h5></a>
-            <p>Digital twin</p> <!--Interactive installation -->
-          </div>
-        </div>
+    <div class="project">
+      <div class="project-text">
+        <h3>VoNo memo app redesign</h3>
+        <p><i>User Experience/Interface Design</i></p>
+        <p>I was given a unique opportunity to enhance the key features of the VoNo memo app, which enables users to quickly collect and send memos. Throughout this project, I conducted extensive research to identify areas for improvement and subsequently redesigned the app's homepage. I'm happy to have been a part of this project and am excited to see the positive impact it will have on the user experience.
+        </p>
+        <a href="src/VoNoMemo.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>         </div>
+      <div class="project-image">
+        <img src="/public/pictures/project4.svg" alt="Project 4" />
       </div>
-       
-      </div>
+    </div>
 
-    
-    </main>
-    <footer class="footerIcons">
-      <div class="iconArea">
-        <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
-          <img src="/public/pictures/linkedin.svg" alt="linkedin icon" />
-        </a>
-        <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
-          <img src="/public/pictures/email.svg" alt="email icon" />
-        </a>
+    <div class="project">
+      <div class="project-text">
+        <h3>Revamping the NS bike lockers </h3>
+        <p><i>Service Design</i></p>
+        <p>NS, the Dutch railway company, approached my team of 3 for a solution to create better bicycle parking at smaller stations. They wanted an innovative, user-friendly design that solves space issues and safety concerns. This design needed to be easily installable at any small Dutch station, adaptable to various bike types, and provide guaranteed, secure parking. Our focus was on the entire user journey, including bike and train travel, and exploring additional NS services. Ultimately, our goal was an affordable, sustainable solution that ensures commuter satisfaction and bicycle safety.
+        </p>
+        <a href="src/NSBikeLocker.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>         </div>
+      <div class="project-image">
+        <img src="/public/pictures/project5.svg" alt="Project 5" />
       </div>
-      <p class="copyright">
-        Copyright © 2022 Mariann Alber. All rights reserved.
-      </p>
-    </footer>
-  </body>
-</html>
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h3>Alarm.io the Design for Emotion</h3>
+        <p><i>Emotional Design</i></p>
+        <p>The project focused on the role of emotion in creating engaging user experiences. Through creative research and design explorations, my team of four developed a strategy for eliciting anxiety through design to ultimately benefit the user in the long term.
+        </p>
+        <a href="src/AlarmIo.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>         </div>
+      <div class="project-image">
+        <img src="/public/pictures/project6.svg" alt="Project 6" />
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h3>Gift from afar</h3>
+        <p><i>User Experience/Interface Design</i></p>
+        <p>One of my recent projects for the Bespoke Design course at the university is called "Gift from Afar". The aim of this project was to design a digital platform that enables people who are living far away from their loved ones to send personalized gifts that reflect the personality, interests, and needs of the recipient. The project was completed in teams of two.        </p>
+        <a href="src/GiftFromAfar.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>         </div>
+      <div class="project-image">
+        <img src="/public/pictures/project7.svg" alt="Project 7" />
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h3>Rijksstudio website analysis</h3>
+        <p><i>Usability Research</i></p>
+        <p>For our 'Research for Design' course project, my team of four conducted a thorough analysis of the Rijksstudio website. Our objective was to enhance the user experience through extensive research, including user trials. To achieve our research goals, we collaborated to identify the key usability challenges by conducting user trials and analyzing the resulting data.
+        </p>
+        <a href="src/Rijksstudio.html" class="project-link">
+          <button class="project-btn">See project</button>
+      </a>   
+          </div>
+      <div class="project-image">
+        <img src="/public/pictures/project8.svg" alt="Project 8" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about-me"class="about-me">
+  <h2>About me</h2>
+  <p>I'm an Estonian living in the Netherlands, and a proud graduate in UX Design (with distinction, no less! 🎓) What excites me most about UX design is the power to create meaningful experiences that truly impact customers. At Merlin and Orbital Eye, I’ve had the privilege of contributing to companies that prioritize making a difference—not only for their customers but also for the wider world. Whether it’s through research, analysis, or crafting seamless wireframes, I’m driven by the desire to design solutions that solve real problems.
+    <br><br>
+    I’m particularly passionate about research and analysis. I love diving deep into the details, figuring out what works (and what doesn’t), and turning insights into actionable solutions. My favorite research methods include expert reviews and accessibility audits, which allow me to ensure designs are inclusive and functional for all.  
+    <br><br>
+    When I’m not working, I enjoy exploring new hobbies like reading 📖, baking 🧁, and playing volleyball 🏐. I also love challenging myself—whether it’s running a 20km obstacle course or trying out waterskiing. 🧭 I’m always on the lookout for opportunities that allow me to grow, both personally and professionally.
+  </p>
+</div>
+
+   
+</body>
+<footer>
+  <div class="iconArea">
+    <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+      <img src="/public/pictures/CV.svg" alt="CV icon" title="Check out my CV"/>
+  </a>
+    <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+      <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Let's connect on LinkedIn!"/>
+    </a>
+    <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+      <img src="/public/pictures/email.svg" alt="Email icon" title="Feel free to email me!" />
+    </a>
+  </div>
+  <p class="copyright">
+    Copyright © 2022 Mariann Alber. All rights reserved.
+  </p>
+</footer>
+</html> 
