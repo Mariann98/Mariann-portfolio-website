@@ -13,6 +13,179 @@ html {
 }
 
 body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidenav {
+  height: 100%;
+  width: 5rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-evenly; /* Space out items evenly */
+}
+
+.sidenav a {
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #202020;
+  font-weight: 600;
+  transform: rotate(270deg); /* Rotates text 90 degrees */
+  transform-origin: center; /* Adjust rotation point */
+  display: inline-block; /* Ensures rotation applies correctly */
+  margin-bottom: 2rem; /* Adds space between links */
+  white-space: nowrap;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.sidenav a:hover {
+  color: #496EAF;
+}
+
+.main {
+  margin: 3rem 10rem 10rem 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem;
+}
+
+.text-container {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.image-container {
+  flex-shrink: 0;
+}
+
+.photo {
+  width: 20rem;
+  height: auto;
+}
+
+.portfolio {
+  margin: 3rem 10rem 10rem 10rem;
+  padding: 3rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project:nth-child(even) .project-text {
+  order: 2;
+}
+
+.project:nth-child(even) .project-image {
+  order: 1;
+}
+
+.project-btn {
+  background-color: #496EAF;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #405a6b;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+
+.about-me {
+  margin: 3rem 10rem 10rem 10rem;
+  padding: 3rem;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.iconArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.icon img {
+  position: relative;
+  margin: 1em;
+  width: 2em;
+  height: auto;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.icon img:hover {
+  filter: grayscale(0%) brightness(100%);
+  transform: scale(1.2);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* General settings for mobile responsiveness */
+body {
   font-size: 1rem;
   line-height: 1.5;
   padding: 0 1rem; /* Add padding for smaller screens */
@@ -158,6 +331,8 @@ footer {
     gap: 0.3rem;
   }
 }
+
+
 </style>
 </head>
 <body>
