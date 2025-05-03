@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tallinn's Central Library Project - Mariann's Portfolio</title>
+    <link rel="shortcut icon" href="/public/pictures/MA.svg" />
+    
+    <!-- Inline CSS styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+      /* General body styles */
+      body {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 5rem;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .sidenav a {
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #202020;
+        font-weight: 600;
+        transform: rotate(270deg); /* Rotates text 90 degrees */
+        transform-origin: center; /* Adjust rotation point */
+        display: inline-block; /* Ensures rotation applies correctly */
+        margin-bottom: 2rem; /* Adds space between links */
+        white-space: nowrap;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+
+      .sidenav a:hover {
+        color: #567092;
+      }
+
+      .main {
+        margin-left: 10rem;
+        padding: 1.5rem;
+      }
+
+      .project-page {
+        margin: 3rem 10rem 3rem 10rem;
+      }
+
+      .project-page h2 {
+        margin-bottom: 1rem;
+      }
+
+      .project-section {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      .project-section img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .project-section p {
+        margin-top: 1rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+      }
+
+      .iconArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .icon img {
+        position: relative;
+        margin: 1em;
+        width: 2em;
+        height: auto;
+      }
+
+      .project-section img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #496EAF;
+}
+h3 {
+    margin-bottom: -1rem;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0; /* Adds spacing around the buttons */
+    gap: 1.5rem; /* Spacing between the buttons */
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #496EAF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #405a6b; /* Hover color for buttons */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 4rem; /* Reduce sidebar width */
+    justify-content: space-around; /* Adjust spacing */
+  }
+
+  .sidenav a {
+    font-size: 0.9rem; /* Smaller font for links */
+    margin-bottom: 1.5rem; /* Reduce spacing between links */
+  }
+
+  .logo {
+    width: 80px; /* Reduce logo size */
+  }
+
+  .main {
+    margin-left: 6rem; /* Adjust main content margin */
+    padding: 1rem;
+  }
+
+  .project-page {
+    margin: 2rem 5rem; /* Reduce margins on smaller screens */
+    padding: 1rem;
+  }
+
+  .project-section img {
+    width: 80%; /* Make images smaller */
+  }
+
+  footer {
+    margin: 1.5em 0; /* Adjust spacing for footer */
+    padding: 0 2rem;
+  }
+
+  .iconArea {
+    flex-direction: row; /* Stack icons vertically */
+    align-items: center;
+  }
+
+  .icon img {
+    margin: 0.5em; /* Reduce spacing for icons */
+    width: 1.5em; /* Smaller icon size */
+  }
+
+  .navigation-buttons {
+    flex-direction: row; /* Stack buttons vertically */
+    gap: 1rem; /* Reduce spacing between buttons */
+  }
+
+  .nav-btn {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.5rem 1rem; /* Reduce button padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidenav {
+    width: 3rem; /* Further reduce sidebar width */
+  }
+
+  .sidenav a {
+    font-size: 0.8rem; /* Even smaller font for links */
+  }
+
+  .logo {
+    width: 60px; /* Further reduce logo size */
+  }
+
+  .main {
+    margin-left: 3rem; /* Further adjust main content margin */
+    padding: 0.5rem;
+  }
+
+  .project-page {
+    margin: 1rem 1rem; /* Further reduce margins */
+    padding: 0.5rem;
+  }
+
+  .project-section img {
+    width: 100%; /* Use full width for smaller screens */
+  }
+
+  footer {
+    margin: 1em; /* Reduce spacing for footer */
+    padding: 0 2rem;
+  }
+
+  .icon img {
+    width: 1.2em; /* Further reduce icon size */
+  }
+
+  .nav-btn {
+    font-size: 0.8rem; /* Smaller button text */
+    padding: 0.4rem 0.8rem; /* Further reduce button padding */
+  }
+}
+.main {
+  margin-left: calc(5rem + 1rem); /* Sidebar width + extra spacing */
+  padding: 1.5rem;
+}
+
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .main {
+    margin-left: calc(4rem + 1rem); /* Adjust for smaller sidebar */
+  }
+
+  .project-page {
+    margin-left: calc(4rem + 1rem); /* Adjust for smaller sidebar */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    margin-left: calc(3rem + 0.5rem); /* Further adjust for narrower sidebar */
+  }
+
+  .project-page {
+    margin-left: calc(3rem + 0.5rem); /* Further adjust for narrower sidebar */
+  }
+}
+      
+</style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidenav">
+    <a href="/index.html"> <img class="logo" src="/public/pictures/logo.png" alt="logo" /></a>
+    <a href="/index.html">Portfolio</a>
+    <a href="/index.html">About me</a>
+  </div>
+
+  <!-- Project Page: CrisisSuite -->
+  <div class="project-page">
+    <h2>Tallinn's Central Library redesign</h2>
+   
+    <div class="project-section">
+        <p>
+            The Tallinn Central Library offers far more than books. As a key cultural and educational hub, it provides digital resources, equipment lending, cultural events, and learning programs to a broad user base. The aim of this project was to improve the user experience of the Library's website, making it easier to navigate, more accessible, and better aligned with the needs of a diverse audience.
+          </p>
+          <img src="/public/pictures/Library Image.png" alt="Library Image" />
+      </div>
+
+    <div class="project-section">
+      <h3>Problem</h3>
+      <p>The website serves a wide demographic - both new and returning users aged 20 to 60-with varying digital skills and interests. However, the existing platform presented several usability challenges: complex navigation with up to five layers, poorly structured content, lack of features, and overwhelming information density.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h3>Goal</h3>
+      <p>The primary goal was to create a more user-friendly and inclusive digital experience while maintaining the formal structure expected of a public service platform. My focus was on the desktop version of the website, which is most commonly used by visitors for checking the e-catalog, finding event information, and accessing digital services.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h3>Process</h3>
+      <p>
+        The redesign process followed a user-centered approach, addressing known challenges through research, analysis, and iterative design. This included desk research, expert reviews, user testing, card sorting, benchmarking, and an accessibility audit. Based on these insights, I implemented several key improvements:
+      </p>
+      <ol>
+        <li><b>Navigation structure</b> - Simplified the main menu and introduced clearer pathways to core services, reducing the time and effort required to find information.
+        </li>
+        <li><b>Content organization</b> - Reorganized layout and labeling to group related content more logically, enhancing clarity and discoverability.
+        </li>
+        <li><b>Visual design</b> - Updated the website's visual language to be more engaging and readable, using a modern, accessible aesthetic.
+        </li>
+        <li><b>Accessibility</b> - Improved compliance with WCAG standards by introducing features like better contrast, font sizing, and simplified forms.
+        </li>
+      </ol>
+      <p>
+        This project followed the typical UX design process: Empathize, Define, Ideate, Prototype, and Test - although I won't go into each phase in detail here.
+      </p>
+      <img src="/public/pictures/Phases.png" alt="Library Image" />
+  
+
+    <div class="project-section">
+        <h3>Prototyping</h3>
+        <p>
+           <b> 1. Homepage organization: The homepage lacked clear organization, making it challenging for users to find relevant information easily.</b>
+            I will begin by addressing the core of the website—the homepage. While updating its visual appearance to better align with the Library's new image, I also focused on restructuring and refining the information presented. In collaboration with the Library, we changed the call-to-action button names to better cater to user needs, and I also gave them the visual appearance of bookmarks. Furthermore, I reorganized the news section and introduced two new sections, 'New books' and 'Latest updates from our channels', as per the Library's request. Each section now highlights the six most recent posts, with additional content accessible by clicking the 'More' button.          </p>        
+          <img src="/public/pictures/Library home page.png" alt="Library Prototyping Image" />
+         <br> <br> <p>
+            <b> 2. Page navigation difficulty: Users faced challenges navigating the website due to complex navigation structures, resulting in confusion about where to find specific content.
+            </b>
+            One example of the navigation difficulty is the campaign page. It is one of the most used pages for the readers, drawing considerable interest each year. However, during the research phase, I identified significant usability challenges: the extensive side menu hides various topics, making it difficult for users to navigate effectively and the overall structure and flow of the page lacked intuitiveness. <br><br> To address these issues, I simplified the content organization by combining the number of topics from 5 to 3, ensuring that all essential information is presented within three comprehensive categories. Previously, the main page contained a wealth of information, alongside two separate dropdown options. In the updated version, I restructured the content to present basic information upfront, with dropdown options available for users who wish to delve deeper into specific details. This approach simplifies the user experience and enhances accessibility to campaign information.</p>           
+            <img src="/public/pictures/Library raamatuga kevadesse.png" alt="Library Prototyping Image" />
+            <br><br>
+            <p>The feedback section has undergone a significant transformation, now adopting a blog-style layout for enhanced user experience. Previously, the feedback form, feedback list, and user comments were spread across three separate pages, requiring users to navigate through multiple clicks. Now, these elements have been consolidated into a single, simplified page, as shown in the third photo. The updated feedback section not only simplifies navigation but also improves readability, achieving the clean and blog-like aesthetic envisioned by the Library and personas.</p>
+           <img src="/public/pictures/Library feedback.png" alt="Library Prototyping Image" />
+           <br> <br> <p>
+            <b> 3. Page structure clarity: Several pages lacked clear structure and intuitive layout, making it difficult for users to understand the flow of information.</b> To showcase how I improved the page structure clarity, I will show two examples: " E-libraries" and " Get in touch" pages. Previously, the information page for e-libraries was cluttered with text in various styles, as discussed in the previous chapter. Now, I've separated the main information onto its own page, providing details on how to contact e-library services. To enhance clarity and visual appeal, I introduced icons and removed unnecessary names such as phone numbers and email addresses. Additionally, the e-library overview now features a clear list view format, consistent with other pages. This ensures that titles, linked titles, paragraph text, and clicked/unclicked links are clearly differentiated for improved readability and navigation.
+            </p>        
+           <img src="/public/pictures/Library e-raamatkogu.png" alt="Library Prototyping Image" />
+           <br> <br> <p>The second example, formerly labeled "Contact," has been renamed "Get in touch" to improve user navigation clarity. Previously, the "Contact" section lacked subcategories in the main menu, causing confusion. By renaming it and integrating subcategories directly into the main menu, users can now access relevant information more easily without navigating through additional menus.<br> <br> To improve the page structure clarity I also redesigned the whole page. Previously, six subjects were listed on a single page, resulting in clutter and difficulty in highlighting important information. To address this, I divided them into separate topics, and put them on the left topic selection, as seen also on other pages. This restructuring enables better emphasis on essential information, particularly since the other topics mainly consist of extensive contact detail lists. <br> <br> Furthermore, I focused on improving alignment and spacing throughout the page layout, ensuring consistency in color schemes for enhanced visual appeal, since before there were 5 different colors. Additionally, I integrated icons into the "Write us" options to improve visibility and quicken user navigation. <br> <br> In the second image, can be seen that information is now presented in a clear list view format, maintaining uniformity across all sections. Each entry includes important details such as addresses, emails, and phone numbers, facilitating easy reference for users. Moreover, instead of adjusting spacing within different departments, I introduced branch icons to signify their association with the main department. This simplifies navigation and enhances overall page aesthetics.</p>
+           <img src="/public/pictures/Library võta ühendust.png" alt="Library Prototyping Image" />
+
+           <br> <br> <p>
+            <b>4. Information presentation: Long lists, unclear categorization and inconsistencies in presenting information made it challenging for users to locate relevant data easily.</b>To show how I improved the information presentation on the new website, I will present the "Regulations", "Our staff", and "FAQ" pages. First off, the Library encountered difficulties in presenting necessary documents clearly to users, prompting me to address this 
+            challenge. One issue was the abundance of documents spread across different main categories, leading to confusion. To simplify this, I combined all documents under the "About us" category and created a dedicated subcategory named "Documents".
+            <br><br>Another issue was the lack of intuitive flow when accessing documents. Research revealed that users were uncertain about the outcome when clicking on a link, resulting in frustration. To fix this, I added icons to each document, clearly indicating its action upon clicking. Additionally, I reorganized the layout by placing each category as a topic selector, with dropdowns providing quick access to information without the need for scrolling.            </p>        
+           <img src="/public/pictures/Library eeskirjad.png" alt="Library Prototyping Image" />
+           <br> <br> <p>Secondly, the "Our staff" page has been relocated to the "About us" main category, making its placement more intuitive according to the research. Previously, it was inconsistently positioned within both the "Contact" and "Libraries" categories, causing confusion for users. 
+            <br><br>Two primary issues were addressed: the tedious nature of a long list of names and inconsistencies in design. Previously, all staff members were listed on a single page, resulting in user frustration due to excessive scrolling. To fix this, staff members are now organized by department, accessible through the topic selector. This simplifies the user experience, enabling quick navigation to the desired department without the need for exhaustive searching.
+           <br> <br>Furthermore, enhancements were implemented to improve layout consistency and clarity. Names are now distinctly separated from other text elements, and links are clearly identifiable. Previously, some names appeared clickable but were not. Now, names appear as plain text and links with underlines and a lighter blue color, clearly indicating their link status for improved user interaction.
+           <br><br> Also previously, side menus would open with the first element displayed, causing uncertainty among users. The new empty state directs users to the left topic selection, providing clearer navigation pathways and reducing confusion. </p>
+           <img src="/public/pictures/Library töötajad.png" alt="Library Prototyping Image" />
+           <br> <br> <p>Similar to the previous page, the "FAQ" page underwent a similar transformation. Subjects are now listed in a topic selector, with questions aligned as dropdowns. This replaces the previous format where all content was combined onto one lengthy page, requiring users to scroll extensively.</p>
+           <img src="/public/pictures/Library korduma kk.png" alt="Library Prototyping Image" />
+
+           <br> <br> <p>
+            <b> 5. Page layout complexity: Many pages featured complex layouts that were overwhelming for users, hindering their ability to navigate effectively.
+            </b> Finally, let's look at the complexity of page layouts, using the "Branch library" page as an example. The branch libraries section faced two significant issues. Firstly, upon clicking the top menu, users were immediately directed to the first branch library without any prior selection option, causing confusion. This problem was resolved by introducing an empty state, guiding users to explore the available branch options upon clicking the branch library section.
+            <br><br>Secondly, there was a multitude of actions available to users, each leading to different outcomes. Users encountered normal text, internal and external links, another menu within the detail page, sharing options, and dropdowns, making navigation
+            complex. In the updated version, users are presented with a clear overview of basic information, with the option to delve deeper by selecting their desired topic from dropdown menus.
+            <br><br>Previously, the flow for the horizontal list beneath the photo involved opening each item on a new page, requiring users to independently locate related information about the branch on a completely new page. This tedious process has been simplified in the new version, providing users with relevant information immediately. Dropdown menus now display relevant information about that specific library, each linked to a new page containing detailed content on the selected topic. </p>        
+           <img src="/public/pictures/Library harud.png" alt="Library Prototyping Image" />
+           <br> <br> <p>
+    
+
+      </div>
+      <div class="navigation-buttons">
+        <a href="/src/CrisisSuite.html" class="nav-btn">Previous</a>
+        <a href="/src/CoSMiC-EYE.html" class="nav-btn">Next</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="iconArea">
+      <a class="icon" href="/public/pictures/Mariann_Alber_UXDesigner_CV.pdf" target="_blank" download>
+        <img src="/public/pictures/CV.svg" alt="CV icon" title="Download my CV"/>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/mariann-alber-9baa49191/" target="_blank">
+        <img src="/public/pictures/linkedin.svg" alt="Linkedin icon" title="Explore my LinkedIn"/>
+      </a>
+      <a class="icon" href="mailto:mariannalber.design@gmail.com" target="_blank">
+        <img src="/public/pictures/email.svg" alt="Email icon" title="Email me"/>
+      </a>
+    </div>
+    <p class="copyright">
+      Copyright © 2022 Mariann Alber. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
